@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#1E4FBF" />
+  <meta name="theme-color" content="#0B0F14" />
 
   <!-- SEO -->
-  <title>Plombier Chauffagiste Climatisation Vendin-le-Vieil (62) | E.I. David Benoit</title>
-  <meta name="description" content="E.I. David Benoit — Plomberie, Chauffage & Climatisation à Vendin-le-Vieil et alentours. Intervention 62, 59 et 80 (Hauts-de-France). Devis gratuit. 30€ TTC/h ou sur devis." />
+  <title>Plombier Chauffagiste Climatisation à Vendin-le-Vieil (62) | E.I. David Benoit</title>
+  <meta name="description" content="E.I. David Benoit — Plomberie, Chauffage & Climatisation à Vendin-le-Vieil et alentours. Intervention Pas-de-Calais (62), Nord (59) et Somme (80) — Hauts-de-France. Devis gratuit. Tarif 30€ TTC/h ou sur devis." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://eloisebehra-lab.github.io/eidavidbenoit-site/" />
 
@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://eloisebehra-lab.github.io/eidavidbenoit-site/" />
   <meta name="twitter:card" content="summary" />
 
-  <!-- LocalBusiness structured data -->
+  <!-- Données structurées (Local SEO) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -59,26 +59,27 @@
 
   <style>
     :root{
-      --blue:#1E4FBF;
-      --blue2:#163B8E;
-      --red:#E23B2E;
+      /* Palette premium (sans bleu/rouge) */
+      --bg0:#0B0F14;      /* obsidienne */
+      --bg1:#0F1620;      /* graphite */
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --line:rgba(255,255,255,.10);
 
-      --bg0:#050713;
-      --bg1:#070A14;
-      --bg2:#0B1230;
+      --text:#F2F4F7;
+      --muted:rgba(242,244,247,.70);
+      --muted2:rgba(242,244,247,.55);
 
-      --text:#ECF1FF;
-      --muted:rgba(236,241,255,.70);
-      --muted2:rgba(236,241,255,.55);
+      --champagne:#C8A86B; /* accent luxe */
+      --champagne2:#E2D2AE;
+      --sage:#7E8F7C;      /* accent secondaire doux */
+      --ink:#0B0F14;
 
-      --card:rgba(255,255,255,.08);
-      --card2:rgba(255,255,255,.06);
-      --line:rgba(255,255,255,.14);
+      --shadow: 0 28px 90px rgba(0,0,0,.60);
+      --shadow2: 0 14px 36px rgba(0,0,0,.40);
 
-      --shadow: 0 28px 80px rgba(0,0,0,.55);
-      --shadow2: 0 12px 30px rgba(0,0,0,.35);
-
-      --r24:24px;
+      --r28:28px;
+      --r22:22px;
       --r18:18px;
       --max:1200px;
     }
@@ -90,102 +91,111 @@
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
       color:var(--text);
       background:
-        radial-gradient(900px 600px at 14% -10%, rgba(30,79,191,.55), transparent 56%),
-        radial-gradient(900px 700px at 90% 5%, rgba(226,59,46,.40), transparent 58%),
-        radial-gradient(1000px 900px at 55% 120%, rgba(30,79,191,.20), transparent 60%),
-        linear-gradient(180deg, var(--bg0), var(--bg2) 46%, var(--bg1));
+        radial-gradient(900px 600px at 15% -10%, rgba(200,168,107,.22), transparent 58%),
+        radial-gradient(900px 700px at 95% 10%, rgba(126,143,124,.18), transparent 60%),
+        radial-gradient(900px 800px at 55% 120%, rgba(200,168,107,.12), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1) 50%, var(--bg0));
       overflow-x:hidden;
     }
     a{color:inherit; text-decoration:none}
     .container{max-width:var(--max); margin:0 auto; padding:0 20px}
     .sr{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
 
-    /* premium subtle noise */
+    /* Grain subtil (premium) */
     body:before{
       content:"";
-      position:fixed; inset:0;
-      pointer-events:none;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
+      position:fixed; inset:0; pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
       mix-blend-mode:overlay;
-      opacity:.18;
+      opacity:.16;
     }
 
     /* Topbar */
     .topbar{
-      position:sticky; top:0; z-index:60;
-      background:rgba(5,7,18,.62);
+      position:sticky; top:0; z-index:80;
+      background:rgba(11,15,20,.62);
       backdrop-filter: blur(18px);
       border-bottom:1px solid rgba(255,255,255,.08);
     }
-    .top-inner{
+    .top{
       display:flex; align-items:center; justify-content:space-between;
       gap:16px; padding:12px 0;
     }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      min-width:260px;
-    }
+    .brand{display:flex; align-items:center; gap:12px; min-width:260px}
     .mark{
       width:44px; height:44px; border-radius:16px;
-      background: linear-gradient(135deg, rgba(30,79,191,.92), rgba(226,59,46,.92));
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
       box-shadow: var(--shadow2);
       display:grid; place-items:center;
-      overflow:hidden;
+      position:relative; overflow:hidden;
     }
-    .mark img{width:44px;height:44px; object-fit:cover; transform:scale(1.06)}
+    .mark:after{
+      content:"";
+      position:absolute; inset:-70%;
+      background: radial-gradient(circle at 30% 30%, rgba(200,168,107,.22), transparent 60%),
+                  radial-gradient(circle at 70% 60%, rgba(126,143,124,.18), transparent 60%);
+      transform: rotate(14deg);
+      filter: blur(2px);
+    }
+    .mark svg{position:relative; z-index:1}
     .btxt{display:flex; flex-direction:column; line-height:1.05}
-    .btxt strong{font-size:13px; letter-spacing:.12em}
-    .btxt span{font-size:12px; color:rgba(236,241,255,.74)}
+    .btxt strong{font-size:13px; letter-spacing:.14em}
+    .btxt span{font-size:12px; color:var(--muted2)}
 
-    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; align-items:center}
+    nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:flex-end}
     nav a{
-      font-size:14px; color:rgba(236,241,255,.86);
+      font-size:14px; color:rgba(242,244,247,.86);
       padding:8px 10px; border-radius:999px;
       border:1px solid transparent;
+      transition: background .15s ease, border-color .15s ease;
     }
-    nav a:hover{border-color:rgba(255,255,255,.16); background:rgba(255,255,255,.06)}
+    nav a:hover{border-color:rgba(255,255,255,.12); background:rgba(255,255,255,.06)}
     .mini-cta{
       display:inline-flex; align-items:center; gap:10px;
       padding:10px 12px; border-radius:999px;
-      background: linear-gradient(90deg, rgba(226,59,46,.98), rgba(30,79,191,.98));
-      border:1px solid rgba(255,255,255,.18);
+      background: linear-gradient(90deg, rgba(200,168,107,.95), rgba(226,210,174,.92));
+      color: #12161C;
+      border:1px solid rgba(255,255,255,.12);
       box-shadow: var(--shadow2);
-      font-weight:800; font-size:14px;
+      font-weight:900; font-size:14px;
       white-space:nowrap;
     }
-
+    .mini-cta:hover{filter:brightness(1.02)}
     @media (max-width: 980px){ nav{display:none} .brand{min-width:auto} }
 
-    /* HERO */
-    header.hero{padding:58px 0 18px}
-    .hero-grid{
-      display:grid; grid-template-columns: 1.15fr .85fr;
-      gap:16px; align-items:stretch;
-    }
+    /* Hero */
+    header.hero{padding:60px 0 18px}
+    .hero-grid{display:grid; grid-template-columns: 1.12fr .88fr; gap:16px; align-items:stretch}
     @media (max-width:980px){ .hero-grid{grid-template-columns:1fr} }
 
     .pill{
       display:inline-flex; align-items:center; gap:10px;
       padding:10px 14px; border-radius:999px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
       backdrop-filter: blur(10px);
       box-shadow: var(--shadow2);
-      font-size:14px; color:rgba(236,241,255,.92);
+      font-size:14px; color:rgba(242,244,247,.90);
       width:fit-content;
     }
-    .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(90deg,var(--red),var(--blue))}
+    .dot{
+      width:10px; height:10px; border-radius:999px;
+      background: linear-gradient(135deg, rgba(200,168,107,1), rgba(126,143,124,1));
+    }
+
     h1{
       margin:14px 0 10px;
-      font-size: clamp(34px, 4.4vw, 58px);
+      font-size: clamp(34px, 4.4vw, 60px);
       line-height:1.02;
-      letter-spacing:-.03em;
+      letter-spacing:-.035em;
     }
     .sub{
       margin:0 0 16px;
-      color:rgba(236,241,255,.78);
-      font-size:16px; line-height:1.7;
-      max-width:65ch;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.75;
+      max-width:68ch;
     }
 
     .hero-actions{display:flex; gap:12px; flex-wrap:wrap; margin-top:10px}
@@ -193,83 +203,80 @@
       display:inline-flex; align-items:center; justify-content:center;
       gap:10px;
       padding:12px 14px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.18);
-      background:rgba(255,255,255,.06);
-      color:#fff;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.05);
+      color:var(--text);
       box-shadow: var(--shadow2);
-      font-weight:800;
-      transition: transform .15s ease, background .15s ease;
+      font-weight:900;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
     }
-    .btn:hover{transform: translateY(-1px)}
+    .btn:hover{transform: translateY(-1px); border-color:rgba(255,255,255,.16)}
     .btn.primary{
-      background: linear-gradient(90deg, rgba(226,59,46,.98), rgba(30,79,191,.98));
-      border-color: rgba(255,255,255,.20);
+      color:#12161C;
+      background: linear-gradient(90deg, rgba(200,168,107,.95), rgba(226,210,174,.92));
+      border-color: rgba(255,255,255,.12);
     }
     .btn.ghost{background:rgba(255,255,255,.04)}
-    .btn small{font-weight:700; opacity:.85}
-
-    .hero-card{
-      border-radius: var(--r24);
-      padding:18px;
-      border:1px solid rgba(255,255,255,.14);
-      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.06));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-      position:relative;
-    }
-    .hero-card:before{
-      content:"";
-      position:absolute; inset:-60%;
-      background:
-        radial-gradient(circle at 35% 40%, rgba(226,59,46,.35), transparent 56%),
-        radial-gradient(circle at 70% 60%, rgba(30,79,191,.35), transparent 62%);
-      transform: rotate(12deg);
-      filter: blur(2px);
-    }
-    .hero-card > *{position:relative; z-index:1}
-    .kpis{
-      display:grid; grid-template-columns:1fr 1fr;
-      gap:12px; margin-top:12px;
-    }
-    .kpi{
-      padding:14px;
-      border-radius: 18px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-    }
-    .kpi strong{display:block; font-size:14px}
-    .kpi span{display:block; color:rgba(236,241,255,.72); font-size:13px; margin-top:6px; line-height:1.35}
-
     .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px}
     .chip{
       display:inline-flex; align-items:center; gap:8px;
       padding:8px 10px;
       border-radius:999px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
       font-size:13px;
-      color:rgba(236,241,255,.88);
+      color:rgba(242,244,247,.88);
     }
 
+    .hero-card{
+      border-radius: var(--r28);
+      padding:18px;
+      border:1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+      isolation:isolate;
+    }
+    .hero-card:before{
+      content:"";
+      position:absolute; inset:-60%;
+      background:
+        radial-gradient(circle at 35% 40%, rgba(200,168,107,.28), transparent 56%),
+        radial-gradient(circle at 70% 60%, rgba(126,143,124,.22), transparent 62%);
+      transform: rotate(12deg);
+      filter: blur(2px);
+      z-index:-1;
+    }
+    .kpis{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px}
+    .kpi{
+      padding:14px;
+      border-radius: 20px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+    }
+    .kpi strong{display:block; font-size:14px}
+    .kpi span{display:block; color:var(--muted); font-size:13px; margin-top:6px; line-height:1.35}
+
     /* Sections */
-    .section{padding:58px 0}
+    .section{padding:60px 0}
     .section h2{
       margin:0 0 12px;
       font-size: clamp(24px, 2.4vw, 36px);
-      letter-spacing:-.015em;
+      letter-spacing:-.02em;
     }
-    .lead{margin:0 0 18px; color:rgba(236,241,255,.76); line-height:1.75; max-width:90ch}
+    .lead{margin:0 0 18px; color:var(--muted); line-height:1.8; max-width:92ch}
 
-    /* Premium grid cards */
+    /* Premium cards */
     .grid3{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
     @media (max-width:980px){ .grid3{grid-template-columns:1fr} }
 
     .card{
-      border-radius: var(--r24);
+      border-radius: var(--r28);
       padding:18px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
       box-shadow: var(--shadow2);
       position:relative;
       overflow:hidden;
@@ -277,152 +284,162 @@
     .card:before{
       content:"";
       position:absolute; inset:-80%;
-      background: radial-gradient(circle at 30% 30%, rgba(30,79,191,.18), transparent 60%),
-                  radial-gradient(circle at 65% 55%, rgba(226,59,46,.14), transparent 60%);
+      background:
+        radial-gradient(circle at 30% 30%, rgba(200,168,107,.16), transparent 60%),
+        radial-gradient(circle at 65% 55%, rgba(126,143,124,.14), transparent 60%);
       transform: rotate(10deg);
       opacity:.9;
     }
     .card > *{position:relative; z-index:1}
     .card h3{margin:0 0 8px; font-size:18px}
-    .card p{margin:0; color:rgba(236,241,255,.72); line-height:1.7}
+    .card p{margin:0; color:var(--muted); line-height:1.75}
     .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
     .tag{
       font-size:12px;
-      color:rgba(236,241,255,.84);
+      color:rgba(242,244,247,.86);
       padding:7px 10px;
       border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-    }
-
-    /* Awards */
-    .awards{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr); margin-top:14px}
-    @media (max-width:980px){ .awards{grid-template-columns:1fr} }
-    .award{
-      border-radius: var(--r24);
-      padding:18px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.14);
-      box-shadow: var(--shadow2);
-    }
-    .award .year{
-      display:inline-flex;
-      padding:6px 10px;
-      border-radius:999px;
-      font-weight:900;
-      background: rgba(255,255,255,.07);
-      border:1px solid rgba(255,255,255,.14);
-      font-size:12px;
-      letter-spacing:.08em;
-    }
-    .award h3{margin:10px 0 6px; font-size:18px}
-    .award p{margin:0; color:rgba(236,241,255,.74); line-height:1.7}
-    .award.gold{
-      background: linear-gradient(180deg, rgba(226,59,46,.16), rgba(30,79,191,.10));
-      border-color: rgba(255,255,255,.20);
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
     }
 
     /* Split blocks */
     .split{display:grid; gap:14px; grid-template-columns: 1fr 1fr}
     @media (max-width:980px){ .split{grid-template-columns:1fr} }
     .list{margin:10px 0 0; padding:0; list-style:none; display:grid; gap:10px}
-    .list li{display:flex; gap:10px; align-items:flex-start; color:rgba(236,241,255,.76); line-height:1.6}
+    .list li{display:flex; gap:10px; align-items:flex-start; color:var(--muted); line-height:1.65}
     .tick{
       width:18px; height:18px; border-radius:7px;
-      background: linear-gradient(90deg, rgba(226,59,46,.98), rgba(30,79,191,.98));
+      background: linear-gradient(135deg, rgba(200,168,107,.95), rgba(126,143,124,.85));
       flex:0 0 18px;
       margin-top:2px;
       box-shadow: var(--shadow2);
     }
 
+    /* Awards */
+    .awards{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr); margin-top:14px}
+    @media (max-width:980px){ .awards{grid-template-columns:1fr} }
+    .award{
+      border-radius: var(--r28);
+      padding:18px;
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow: var(--shadow2);
+    }
+    .award .year{
+      display:inline-flex;
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:950;
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
+      font-size:12px;
+      letter-spacing:.08em;
+      color:rgba(242,244,247,.92);
+    }
+    .award h3{margin:10px 0 6px; font-size:18px}
+    .award p{margin:0; color:var(--muted); line-height:1.75}
+    .award.gold{
+      background: linear-gradient(180deg, rgba(200,168,107,.16), rgba(255,255,255,.04));
+      border-color: rgba(200,168,107,.25);
+    }
+
     /* FAQ */
     details{
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      border-radius: 18px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      border-radius: 20px;
       padding: 12px 14px;
       box-shadow: var(--shadow2);
     }
     details + details{margin-top:10px}
     summary{
       cursor:pointer;
-      font-weight:900;
-      color:rgba(236,241,255,.92);
+      font-weight:950;
+      color:rgba(242,244,247,.92);
       list-style:none;
       display:flex; justify-content:space-between; gap:10px; align-items:center;
     }
     summary::-webkit-details-marker{display:none}
-    details p{margin:10px 0 0; color:rgba(236,241,255,.72); line-height:1.7}
+    details p{margin:10px 0 0; color:var(--muted); line-height:1.75}
 
-    /* Contact */
+    /* Contact + Map */
     .contact-grid{display:grid; gap:14px; grid-template-columns: .9fr 1.1fr}
     @media (max-width:980px){ .contact-grid{grid-template-columns:1fr} }
     .contact{
-      border-radius: var(--r24);
+      border-radius: var(--r28);
       padding:18px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
       box-shadow: var(--shadow2);
     }
     .contact h3{margin:0 0 10px}
     .row{
       display:flex; gap:10px; align-items:center;
       padding:10px 12px;
-      border-radius:18px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
       margin-top:10px;
     }
     .ico{
-      width:40px; height:40px; border-radius:16px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
+      width:42px; height:42px; border-radius:18px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
       display:grid; place-items:center;
-      flex:0 0 40px;
+      flex:0 0 42px;
     }
-    .row small{display:block; color:rgba(236,241,255,.65)}
+    .row small{display:block; color:var(--muted2)}
     .row strong{display:block; font-size:15px}
 
     .map{
-      border-radius: var(--r24);
+      border-radius: var(--r28);
       overflow:hidden;
-      border:1px solid rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.10);
       box-shadow: var(--shadow);
-      min-height: 360px;
-      background: rgba(255,255,255,.05);
+      min-height: 380px;
+      background: rgba(255,255,255,.04);
     }
-    .map iframe{width:100%; height:100%; border:0}
+    .map iframe{width:100%; height:100%; border:0; filter:saturate(.9) contrast(1.05)}
 
     /* Footer */
     footer{
       padding: 28px 0 44px;
-      border-top:1px solid rgba(255,255,255,.10);
-      color:rgba(236,241,255,.62);
+      border-top:1px solid rgba(255,255,255,.08);
+      color:rgba(242,244,247,.62);
       font-size:13px;
     }
     .foot{display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:space-between}
     .links{display:flex; gap:12px; flex-wrap:wrap}
-    .links a{color:rgba(236,241,255,.62)}
+    .links a{color:rgba(242,244,247,.62)}
     .links a:hover{color:#fff}
 
-    /* Floating actions (mobile premium) */
+    /* Floating buttons */
     .float{
-      position:fixed; z-index:80;
+      position:fixed; z-index:90;
       right:16px; bottom:16px;
       display:flex; flex-direction:column; gap:10px;
     }
     .fab{
-      width:54px; height:54px;
-      border-radius:20px;
+      width:56px; height:56px;
+      border-radius:22px;
       display:grid; place-items:center;
-      border:1px solid rgba(255,255,255,.18);
-      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
       box-shadow: var(--shadow);
       backdrop-filter: blur(16px);
-      transition: transform .15s ease;
+      transition: transform .15s ease, filter .15s ease;
+      font-size:18px;
     }
     .fab:hover{transform: translateY(-1px)}
-    .fab.primary{background: linear-gradient(90deg, rgba(226,59,46,.98), rgba(30,79,191,.98))}
+    .fab.primary{
+      color:#12161C;
+      background: linear-gradient(90deg, rgba(200,168,107,.95), rgba(226,210,174,.92));
+    }
+
+    /* Reveal animation */
+    .reveal{opacity:0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease}
+    .reveal.on{opacity:1; transform:none}
   </style>
 </head>
 
@@ -430,11 +447,17 @@
   <!-- TOPBAR -->
   <div class="topbar">
     <div class="container">
-      <div class="top-inner">
+      <div class="top">
         <div class="brand" aria-label="E.I. David Benoit">
           <div class="mark" aria-hidden="true">
-            <!-- Logo extrait de la carte (intégré en base64 pour rester en 1 seul fichier) -->
-            <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKYAAACWCAIAAAB6wyp0AAAB9ElEQVR4nO3cMW7bQBiG4UuQ0p5K9m9B5d3oFjS2cQ1w4yQ0Qb2rUQxk6o8mVt0f0m9g4wqCk3oKqg0dPqfEw2d9s4f+6mZp3xv8e2zv9g0f3zv7d7mQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPg3rQ1bq0v2m8w9p7bqW8vVwzYy9c6o2i5d9r2p3fR0gZ3Q9w8u1m1m1o7l8m0mQvYz9mY0Y0f1g9m5lqv3m2V3mWm5bqkz8v2l9mO7b2q5m+o8mJX8m7b3mG7b2o8m9Ww+f9b4n7m6b2f5Wb0j9aQm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8Wm8s9m9a6m3V0m9b8s+f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4T/8B5c7nX5y+eWkAAAAASUVORK5CYII=" />
+            <!-- Icône premium minimal (plomberie + chauffage + clim) -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M6 8h6a2 2 0 0 0 2-2V4" stroke="rgba(242,244,247,.9)" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M14 4h3a2 2 0 0 1 2 2v2" stroke="rgba(242,244,247,.9)" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M8 8v6a2 2 0 0 0 2 2h2" stroke="rgba(242,244,247,.9)" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M18 10c0 2-1.2 3.5-2.5 4.6-1.3-1.1-2.5-2.6-2.5-4.6 0-1.3 1.1-2.5 2.5-3.8 1.4 1.3 2.5 2.5 2.5 3.8Z" stroke="rgba(200,168,107,.95)" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M6 18l2-2m0 4v-6m-2 2l2 2" stroke="rgba(126,143,124,.95)" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
           </div>
           <div class="btxt">
             <strong>E.I. DAVID BENOIT</strong>
@@ -449,7 +472,7 @@
           <a href="#tarifs">Tarifs</a>
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
-          <a class="mini-cta" href="tel:+33781436136">📞 Appeler</a>
+          <a class="mini-cta" href="tel:+33781436136">📞 07 81 43 61 36</a>
         </nav>
       </div>
     </div>
@@ -459,19 +482,19 @@
   <header class="hero" id="accueil">
     <div class="container">
       <div class="hero-grid">
-        <div>
-          <div class="pill"><span class="dot"></span> Travail premium • Devis gratuit • Hauts-de-France</div>
-          <h1>Un artisan exigeant.<br>Un résultat impeccable.</h1>
+        <div class="reveal">
+          <div class="pill"><span class="dot"></span> Devis gratuit • Travail soigné • Hauts-de-France</div>
+          <h1>Une finition propre.<br>Un service haut niveau.</h1>
           <p class="sub">
-            <strong>E.I. David Benoit</strong> — Plomberie, Chauffage & Climatisation à <strong>Vendin-le-Vieil</strong>.
-            Intervention rapide sur le <strong>62</strong> et déplacements possibles sur le <strong>59</strong> et <strong>80</strong>.
-            Conseil, transparence et finitions propres.
+            <strong>E.I. David Benoit</strong> intervient en <strong>plomberie</strong>, <strong>chauffage</strong> et <strong>climatisation</strong>
+            à <strong>Vendin-le-Vieil</strong> et alentours. Déplacements possibles sur le <strong>62</strong>, <strong>59</strong> et <strong>80</strong>
+            (Hauts-de-France). Conseils clairs, méthode rigoureuse, résultat durable.
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary" href="tel:+33781436136">📞 07 81 43 61 36</a>
-            <a class="btn ghost" href="mailto:eidavidbenoit@gmail.com?subject=Demande%20de%20devis%20-%20E.I.%20David%20Benoit">✉️ Devis gratuit</a>
-            <a class="btn" href="#contact"><small>📍</small> Adresse & carte</a>
+            <a class="btn primary" href="tel:+33781436136">📞 Appeler</a>
+            <a class="btn ghost" href="mailto:eidavidbenoit@gmail.com?subject=Demande%20de%20devis%20-%20E.I.%20David%20Benoit">✉️ Demander un devis</a>
+            <a class="btn" href="#contact">📍 Adresse & carte</a>
           </div>
 
           <div class="chips" aria-label="Engagements">
@@ -481,25 +504,13 @@
           </div>
         </div>
 
-        <aside class="hero-card" aria-label="Résumé">
-          <div class="pill"><span class="dot"></span> Excellence métier • Compétition & terrain</div>
+        <aside class="hero-card reveal" aria-label="Résumé">
+          <div class="pill"><span class="dot"></span> Excellence métier • Sérieux prouvé</div>
           <div class="kpis">
-            <div class="kpi">
-              <strong>Tarif clair</strong>
-              <span>30€ TTC/heure<br>ou selon devis</span>
-            </div>
-            <div class="kpi">
-              <strong>Devis</strong>
-              <span>Gratuit & rapide<br>sans engagement</span>
-            </div>
-            <div class="kpi">
-              <strong>Zone</strong>
-              <span>Vendin-le-Vieil<br>62 • 59 • 80</span>
-            </div>
-            <div class="kpi">
-              <strong>Paiements</strong>
-              <span>CB • chèque<br>espèces • virement</span>
-            </div>
+            <div class="kpi"><strong>Tarif</strong><span>30€ TTC / heure<br>ou selon devis</span></div>
+            <div class="kpi"><strong>Devis</strong><span>Gratuit & rapide<br>sans engagement</span></div>
+            <div class="kpi"><strong>Zone</strong><span>Vendin-le-Vieil<br>62 • 59 • 80</span></div>
+            <div class="kpi"><strong>Paiement</strong><span>CB • chèque<br>espèces • virement</span></div>
           </div>
           <div class="chips">
             <span class="chip">🚰 Plomberie</span>
@@ -514,31 +525,34 @@
   <!-- SERVICES -->
   <section class="section" id="services">
     <div class="container">
-      <h2>Services</h2>
-      <p class="lead">
-        Des prestations pensées pour durer : diagnostic sérieux, solutions adaptées, pose propre, finitions nettes.
-      </p>
+      <div class="reveal">
+        <h2>Services</h2>
+        <p class="lead">
+          Une approche premium : diagnostic sérieux, solution adaptée, pose propre et finitions nettes.
+          Un interlocuteur unique, du devis à la réalisation.
+        </p>
+      </div>
 
       <div class="grid3">
-        <article class="card">
+        <article class="card reveal">
           <h3>🚰 Plomberie</h3>
-          <p>Dépannage, fuites, robinetterie, sanitaires, raccordements, rénovation et amélioration du confort.</p>
+          <p>Dépannage, recherche de fuite, robinetterie, sanitaires, raccordements, rénovation et optimisation du confort.</p>
           <div class="tags">
-            <span class="tag">Recherche de fuite</span><span class="tag">Sanitaires</span><span class="tag">Rénovation</span>
+            <span class="tag">Fuite</span><span class="tag">Sanitaires</span><span class="tag">Rénovation</span>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card reveal">
           <h3>🔥 Chauffage</h3>
-          <p>Installation/remplacement, entretien, radiateurs, circuits, optimisation : confort et performance.</p>
+          <p>Installation/remplacement, entretien, radiateurs, circuits, conseils d’amélioration et confort thermique.</p>
           <div class="tags">
             <span class="tag">Installation</span><span class="tag">Entretien</span><span class="tag">Confort</span>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card reveal">
           <h3>❄️ Climatisation</h3>
-          <p>Étude, installation et entretien. Solutions adaptées à votre logement ou local (selon besoin).</p>
+          <p>Étude, installation et entretien. Solutions adaptées à votre logement ou local (selon vos besoins).</p>
           <div class="tags">
             <span class="tag">Étude</span><span class="tag">Pose</span><span class="tag">Maintenance</span>
           </div>
@@ -550,23 +564,25 @@
   <!-- ZONES -->
   <section class="section" id="zones">
     <div class="container">
-      <h2>Zone d’intervention</h2>
-      <p class="lead">
-        Basé à <strong>Vendin-le-Vieil (62880)</strong>. Interventions sur le secteur et alentours,
-        ainsi que sur les départements <strong>62</strong>, <strong>59</strong> et <strong>80</strong> (Hauts-de-France).
-      </p>
+      <div class="reveal">
+        <h2>Zone d’intervention</h2>
+        <p class="lead">
+          Basé à <strong>Vendin-le-Vieil (62880)</strong> : interventions sur le secteur et alentours.
+          Déplacements possibles sur les départements <strong>62</strong>, <strong>59</strong> et <strong>80</strong> (Hauts-de-France).
+        </p>
+      </div>
 
       <div class="split">
-        <div class="card">
+        <div class="card reveal">
           <h3>📍 Secteur principal</h3>
           <ul class="list">
-            <li><span class="tick"></span> Vendin-le-Vieil & communes voisines</li>
+            <li><span class="tick"></span> Vendin-le-Vieil et communes voisines</li>
             <li><span class="tick"></span> Lens • Liévin • Hénin-Beaumont • Béthune • Arras (selon demande)</li>
             <li><span class="tick"></span> Déplacements possibles selon nature des travaux</li>
           </ul>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
           <h3>🧭 Départements</h3>
           <ul class="list">
             <li><span class="tick"></span> <strong>62 — Pas-de-Calais</strong> (prioritaire)</li>
@@ -582,25 +598,27 @@
   <!-- DISTINCTIONS -->
   <section class="section" id="distinctions">
     <div class="container">
-      <h2>Distinctions & sérieux professionnel</h2>
-      <p class="lead">
-        Compétition + exigence : un niveau de précision et de rigueur que j’applique sur chaque intervention.
-      </p>
+      <div class="reveal">
+        <h2>Distinctions & sérieux professionnel</h2>
+        <p class="lead">
+          Un parcours reconnu : rigueur, précision et exigence — appliquées sur chaque intervention, chez vous.
+        </p>
+      </div>
 
       <div class="awards">
-        <div class="award">
+        <div class="award reveal">
           <span class="year">2021</span>
           <h3>Médaille d’argent — WorldSkills</h3>
-          <p>Excellence technique, précision, respect des normes et qualité d’exécution.</p>
+          <p>Excellence technique, respect des normes, qualité du rendu et précision.</p>
         </div>
 
-        <div class="award">
+        <div class="award reveal">
           <span class="year">2023</span>
           <h3>Médaille d’argent — Meilleur Apprenti de France</h3>
           <p>Distinction nationale : méthode, propreté du travail, maîtrise professionnelle.</p>
         </div>
 
-        <div class="award gold">
+        <div class="award gold reveal">
           <span class="year">2025</span>
           <h3>🥇 Médaille d’or — WorldSkills</h3>
           <p>Exigence maximale : savoir-faire, rapidité, précision et finition premium.</p>
@@ -612,22 +630,24 @@
   <!-- TARIFS -->
   <section class="section" id="tarifs">
     <div class="container">
-      <h2>Tarifs & paiement</h2>
-      <p class="lead">
-        Transparence avant tout. Le tarif peut varier selon la nature et l’ampleur des travaux demandés.
-      </p>
+      <div class="reveal">
+        <h2>Tarifs & paiement</h2>
+        <p class="lead">
+          Transparence avant tout : le tarif peut varier selon la nature des travaux (installation, rénovation, contraintes techniques).
+        </p>
+      </div>
 
       <div class="split">
-        <div class="card">
+        <div class="card reveal">
           <h3>💶 Tarification</h3>
           <ul class="list">
             <li><span class="tick"></span> <strong>Taux horaire : 30€ TTC</strong></li>
-            <li><span class="tick"></span> <strong>Ou selon devis</strong> (travaux spécifiques)</li>
+            <li><span class="tick"></span> <strong>Ou selon devis</strong> en fonction des travaux demandés</li>
             <li><span class="tick"></span> <strong>Devis gratuit</strong> (réponse rapide)</li>
           </ul>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
           <h3>💳 Paiements acceptés</h3>
           <ul class="list">
             <li><span class="tick"></span> Carte bancaire</li>
@@ -643,41 +663,47 @@
   <!-- FAQ -->
   <section class="section" id="faq">
     <div class="container">
-      <h2>Questions fréquentes</h2>
-      <p class="lead">Quelques réponses rapides pour vous aider à décider sereinement.</p>
+      <div class="reveal">
+        <h2>Questions fréquentes</h2>
+        <p class="lead">Quelques réponses rapides pour vous aider à décider sereinement.</p>
+      </div>
 
-      <details>
-        <summary>Le devis est-il vraiment gratuit ? <span>＋</span></summary>
-        <p>Oui. Le devis est gratuit et sans engagement. Selon la demande, il peut être établi rapidement par téléphone ou après échange sur place.</p>
-      </details>
+      <div class="reveal">
+        <details>
+          <summary>Le devis est-il vraiment gratuit ? <span>＋</span></summary>
+          <p>Oui. Le devis est gratuit et sans engagement. Selon la demande, il peut être fait rapidement par téléphone ou après échange sur place.</p>
+        </details>
 
-      <details>
-        <summary>Intervenez-vous en dehors de Vendin-le-Vieil ? <span>＋</span></summary>
-        <p>Oui. Secteur principal Vendin-le-Vieil et alentours, avec interventions possibles sur les départements 62, 59 et 80 (Hauts-de-France).</p>
-      </details>
+        <details>
+          <summary>Intervenez-vous en dehors de Vendin-le-Vieil ? <span>＋</span></summary>
+          <p>Oui : Vendin-le-Vieil et alentours + interventions possibles sur les départements 62, 59 et 80 (Hauts-de-France).</p>
+        </details>
 
-      <details>
-        <summary>Quels moyens de paiement acceptez-vous ? <span>＋</span></summary>
-        <p>Carte bancaire, chèque, espèces et virement bancaire.</p>
-      </details>
+        <details>
+          <summary>Quels moyens de paiement acceptez-vous ? <span>＋</span></summary>
+          <p>Carte bancaire, chèque, espèces et virement bancaire.</p>
+        </details>
 
-      <details>
-        <summary>Proposez-vous un tarif horaire ? <span>＋</span></summary>
-        <p>Oui : 30€ TTC/heure. Selon les travaux (installation, rénovation, contraintes techniques), un devis peut être proposé.</p>
-      </details>
+        <details>
+          <summary>Proposez-vous un tarif horaire ? <span>＋</span></summary>
+          <p>Oui : 30€ TTC/heure. Selon les travaux demandés, un devis peut être proposé.</p>
+        </details>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container">
-      <h2>Contact & coordonnées</h2>
-      <p class="lead">
-        Pour un dépannage, une installation ou un conseil : appelez ou envoyez un email — <strong>devis gratuit</strong>.
-      </p>
+      <div class="reveal">
+        <h2>Contact & coordonnées</h2>
+        <p class="lead">
+          Pour un dépannage, une installation ou un conseil : appelez ou envoyez un email — <strong>devis gratuit</strong>.
+        </p>
+      </div>
 
       <div class="contact-grid">
-        <div class="contact">
+        <div class="contact reveal">
           <h3>Contact direct</h3>
 
           <a class="row" href="tel:+33781436136" aria-label="Appeler">
@@ -706,7 +732,7 @@
           </div>
         </div>
 
-        <div class="map" aria-label="Carte">
+        <div class="map reveal" aria-label="Carte">
           <iframe
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -734,7 +760,7 @@
           <a href="#contact">Contact</a>
         </div>
       </div>
-      <div style="margin-top:12px; color:rgba(236,241,255,.50)">
+      <div style="margin-top:12px; color:rgba(242,244,247,.48)">
         © <span id="y"></span> E.I. David Benoit. Tous droits réservés.
       </div>
     </div>
@@ -748,7 +774,16 @@
   </div>
 
   <script>
+    // Année auto
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Reveal on scroll (effet premium)
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add('on');
+      });
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   </script>
 </body>
 </html>
