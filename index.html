@@ -537,3 +537,298 @@
 
 </body>
 </html>
+.btn.secondary{
+  background:transparent;
+  color:var(--text);
+  border:1px solid var(--line);
+  margin-left:10px;
+}
+.card{
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+}
+.card h3{color:var(--gold);margin-bottom:8px}
+.small{font-size:.92rem;color:var(--muted)}
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
+}
+.section h2{
+  text-align:center;
+  font-size:2rem;
+  margin-bottom:14px;
+}
+.section p.intro{
+  text-align:center;
+  max-width:800px;
+  margin:0 auto 34px;
+  color:var(--muted);
+}
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+/* ===== Onglets ===== */
+.tabs{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+}
+.tabbar{
+  display:flex;
+  gap:10px;
+  padding:12px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  background:rgba(0,0,0,.22);
+  flex-wrap:wrap;
+}
+.tabbar button{
+  cursor:pointer;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+  font-weight:800;
+  padding:10px 14px;
+  border-radius:999px;
+}
+.tabbar button.active{
+  border:none;
+  color:#000;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+}
+.tabcontent{
+  padding:18px;
+}
+.tabpanel{display:none}
+.tabpanel.active{display:block}
+.tabpanel ul{padding-left:18px;margin-top:10px;color:var(--muted)}
+.tabpanel li{margin:6px 0}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px){
+  .hero-inner{grid-template-columns:1fr}
+  .grid3{grid-template-columns:1fr}
+  nav{display:none}
+  .hero h1{font-size:2.1rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <strong>E.I. David Benoit</strong>
+      <span>Plomberie • Chauffage • Climatisation — Vendin-le-Vieil</span>
+    </div>
+    <nav>
+      <a href="#prestations">Prestations</a>
+      <a href="#recompenses">Récompenses</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#zone">Zone</a>
+      <a class="cta" href="#contact">Devis gratuit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <h1>David <span>Plomberie 62</span></h1>
+      <p>
+        Artisan plombier chauffagiste climatisation à <b>Vendin-le-Vieil</b>.  
+        Intervention <b>62</b> + déplacements possibles <b>59</b> et <b>80</b> (Hauts-de-France).
+      </p>
+      <a class="btn" href="tel:+33781436136">📞 Appeler</a>
+      <a class="btn secondary" href="#contact">📍 Contact</a>
+
+      <div style="margin-top:18px;display:grid;gap:10px;grid-template-columns:repeat(2,1fr)">
+        <div class="card">
+          <h3>Devis gratuit</h3>
+          <div class="small">Réponse rapide selon votre besoin.</div>
+        </div>
+        <div class="card">
+          <h3>30€ TTC / heure</h3>
+          <div class="small">Ou sur devis selon les travaux.</div>
+        </div>
+        <div class="card">
+          <h3>Paiements</h3>
+          <div class="small">CB • chèque • espèces • virement</div>
+        </div>
+        <div class="card">
+          <h3>Travail soigné</h3>
+          <div class="small">Qualité, propreté, sérieux.</div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card" id="contact">
+      <h3>Coordonnées</h3>
+      <p class="small" style="margin-top:8px">
+        📞 <a href="tel:+33781436136">07 81 43 61 36</a><br>
+        ✉️ <a href="mailto:eidavidbenoit@gmail.com">eidavidbenoit@gmail.com</a><br>
+        📍 101 Rue Gustave Delory, 62880 Vendin-le-Vieil
+      </p>
+      <p class="small" style="margin-top:10px">
+        <b>Disponibilités :</b> selon planning — intervention rapide.
+      </p>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="prestations">
+  <h2>Prestations (avec onglets)</h2>
+  <p class="intro">
+    Un site pro doit être clair : sélectionnez votre besoin et voyez les services correspondants.
+  </p>
+
+  <div class="tabs" aria-label="Onglets prestations">
+    <div class="tabbar">
+      <button class="tabbtn active" data-tab="plomberie">Plomberie</button>
+      <button class="tabbtn" data-tab="chauffage">Chauffage</button>
+      <button class="tabbtn" data-tab="clim">Climatisation</button>
+    </div>
+
+    <div class="tabcontent">
+      <div class="tabpanel active" id="plomberie">
+        <h3 style="color:var(--gold)">Plomberie</h3>
+        <p class="small">Dépannage, rénovation, sanitaires, fuites, installations complètes et mises aux normes.</p>
+        <ul>
+          <li>Recherche & réparation de fuite</li>
+          <li>WC, douche, baignoire, robinetterie</li>
+          <li>Rénovation salle de bain</li>
+          <li>Installation & remplacement d’équipements</li>
+        </ul>
+      </div>
+
+      <div class="tabpanel" id="chauffage">
+        <h3 style="color:var(--gold)">Chauffage</h3>
+        <p class="small">Entretien, optimisation, dépannage et modernisation (selon équipements).</p>
+        <ul>
+          <li>Radiateurs & réseaux : diagnostic, purge, réglages</li>
+          <li>Optimisation confort & consommation</li>
+          <li>Remplacement / modernisation d’installation</li>
+          <li>Conseils adaptés à votre logement</li>
+        </ul>
+      </div>
+
+      <div class="tabpanel" id="clim">
+        <h3 style="color:var(--gold)">Climatisation</h3>
+        <p class="small">Installation, maintenance et optimisation de systèmes performants.</p>
+        <ul>
+          <li>Installation adaptée à la surface</li>
+          <li>Maintenance / entretien</li>
+          <li>Optimisation des réglages & consommation</li>
+          <li>Conseils sur le choix du matériel</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="recompenses">
+  <h2>Récompenses & sérieux</h2>
+  <p class="intro">Des distinctions qui prouvent l’exigence et la maîtrise du métier.</p>
+
+  <div class="grid3">
+    <div class="card">
+      <h3>🥈 WorldSkills – 2021</h3>
+      <p class="small">Médaille d’argent – participation & performance.</p>
+    </div>
+    <div class="card">
+      <h3>🥈 MAF – 2023</h3>
+      <p class="small">Meilleurs Apprentis de France – médaille d’argent.</p>
+    </div>
+    <div class="card">
+      <h3>🥇 WorldSkills – 2025</h3>
+      <p class="small">Médaille d’or – excellence & sérieux.</p>
+    </div>
+  </div>
+</section>
+<section class="section" id="tarifs">
+  <h2>Tarifs & Paiements</h2>
+  <p class="intro">Transparence : un cadre simple, et un devis gratuit si les travaux le nécessitent.</p>
+
+  <div class="grid3">
+    <div class="card">
+      <h3>Main d’œuvre</h3>
+      <div style="font-size:2rem;font-weight:900;color:var(--gold2);margin:10px 0 6px">30€ TTC / h</div>
+      <p class="small">Ou <b style="color:var(--text)">sur devis</b> selon la nature des travaux demandés.</p>
+    </div>
+
+    <div class="card">
+      <h3>Devis</h3>
+      <p class="small"><b style="color:var(--text)">Devis gratuit</b> – réponse rapide selon votre demande.</p>
+      <p class="small" style="margin-top:10px">Vous pouvez appeler ou envoyer un email.</p>
+      <a class="btn" href="tel:+33781436136" style="margin-top:12px;display:inline-block">📞 Appeler</a>
+    </div>
+
+    <div class="card">
+      <h3>Paiements acceptés</h3>
+      <p class="small">Carte bancaire • chèque • espèces • virement bancaire.</p>
+      <p class="small" style="margin-top:10px;color:var(--muted)">
+        Paiement simple et sécurisé.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="zone">
+  <h2>Zone d’intervention & Plan</h2>
+  <p class="intro">
+    Vendin-le-Vieil et alentours • Intervention 62 • Déplacements possibles 59 & 80 (Hauts-de-France).
+  </p>
+
+  <div style="max-width:1100px;margin:auto;border-radius:18px;overflow:hidden;border:1px solid var(--line)">
+    <iframe
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      style="width:100%;height:380px;border:0;display:block"
+      src="https://www.google.com/maps?q=101%20Rue%20Gustave%20Delory%2062880%20Vendin-le-Vieil&output=embed">
+    </iframe>
+  </div>
+
+  <p class="intro" style="margin-top:18px">
+    📍 <b style="color:var(--text)">101 Rue Gustave Delory, 62880 Vendin-le-Vieil</b>
+  </p>
+</section>
+
+<footer style="border-top:1px solid var(--line);padding:50px 20px;color:var(--muted);text-align:center;background:rgba(0,0,0,.25)">
+  <div style="max-width:1100px;margin:auto">
+    <p>
+      <b style="color:var(--text)">E.I. David Benoit</b> — Plomberie • Chauffage • Climatisation<br>
+      Vendin-le-Vieil • Hauts-de-France • 62 / 59 / 80<br><br>
+      📞 <a href="tel:+33781436136" style="color:var(--text)">07 81 43 61 36</a>
+      • ✉️ <a href="mailto:eidavidbenoit@gmail.com" style="color:var(--text)">eidavidbenoit@gmail.com</a><br><br>
+      © 2026 — Tous droits réservés
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Onglets (tabs) ultra simple et stable
+  const buttons = document.querySelectorAll('.tabbtn');
+  const panels = document.querySelectorAll('.tabpanel');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      panels.forEach(p => {
+        p.classList.toggle('active', p.id === target);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
