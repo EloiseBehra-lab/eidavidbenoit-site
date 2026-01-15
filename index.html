@@ -1,991 +1,967 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <title>David Plomberie 62 – Plombier Chauffagiste Climatisation | Vendin-le-Vieil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="E.I. David Benoit – Plomberie, Chauffage et Climatisation à Vendin-le-Vieil. Intervention 62, 59, 80 (Hauts-de-France). Devis gratuit. 30€ TTC/h ou sur devis. Artisan médaillé WorldSkills." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://www.david-plomberie62.fr/" />
+<meta charset="utf-8">
+<title>David Plomberie 62 – Plombier Chauffagiste Climatisation | Vendin-le-Vieil</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="David Plomberie 62 – Plomberie, Chauffage, Climatisation" />
-  <meta property="og:description" content="Vendin-le-Vieil • 62 / 59 / 80 • Devis gratuit • 30€ TTC/h ou sur devis • Artisan médaillé WorldSkills" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.david-plomberie62.fr/" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="E.I. David Benoit – Plomberie, Chauffage et Climatisation à Vendin-le-Vieil. Intervention 62, 59, 80 (Hauts-de-France). Devis gratuit. Artisan médaillé WorldSkills.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.david-plomberie62.fr/">
 
-  <meta name="theme-color" content="#0f1216" />
+<meta property="og:title" content="David Plomberie 62">
+<meta property="og:description" content="Plomberie • Chauffage • Climatisation – Vendin-le-Vieil – Devis gratuit">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.david-plomberie62.fr/">
 
-  <style>
-    :root{
-      --bg:#0f1216;
-      --bg2:#0b0e12;
-      --panel:rgba(255,255,255,.06);
-      --panel2:rgba(255,255,255,.035);
-      --gold:#c9a14a;
-      --gold2:#e0c27a;
-      --text:#f5f6f7;
-      --muted:#b5b8bd;
-      --line:rgba(255,255,255,.10);
-      --shadow:0 18px 60px rgba(0,0,0,.48);
-      --radius:18px;
-      --ring: 0 0 0 4px rgba(201,161,74,.22);
-    }
+<meta name="theme-color" content="#0f1216">
 
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;
-      color:var(--text);
-      line-height:1.6;
-      background:
-        radial-gradient(900px 500px at 50% -10%, rgba(201,161,74,.16), transparent 60%),
-        linear-gradient(180deg,var(--bg),var(--bg2));
-      overflow-x:hidden;
-    }
+<style>
+:root{
+  --bg:#0f1216;
+  --bg2:#0b0e12;
+  --panel:rgba(255,255,255,.07);
+  --panel2:rgba(255,255,255,.04);
+  --gold:#c9a14a;
+  --gold2:#e6cf93;
+  --text:#f5f6f7;
+  --muted:#b5b8bd;
+  --line:rgba(255,255,255,.12);
+  --shadow:0 20px 60px rgba(0,0,0,.55);
+  --radius:18px;
+  --ring:0 0 0 4px rgba(201,161,74,.25);
+}
 
-    /* Fond “logo plomberie” en SVG discret (stable, léger) */
-    body::before{
-      content:"";
-      position:fixed;
-      inset:0;
-      pointer-events:none;
-      z-index:-1;
-      opacity:.14;
-      background-repeat:repeat;
-      background-size:440px 440px;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='440' height='440' viewBox='0 0 440 440'%3E%3Cg fill='none' stroke='%23c9a14a' stroke-opacity='0.55' stroke-width='10'%3E%3Cpath d='M120 95h90c20 0 36 16 36 36v28c0 20-16 36-36 36h-24v78c0 30-25 55-55 55s-55-25-55-55v-30h60'/%3E%3Cpath d='M300 110h50v50h-50z'/%3E%3Cpath d='M276 160h100v56c0 20-16 36-36 36h-28v98h-36v-98h-0c-20 0-36-16-36-36v-56z'/%3E%3Cpath d='M85 315c0 30 25 55 55 55s55-25 55-55'/%3E%3C/g%3E%3C/svg%3E");
-      filter: blur(.2px);
-    }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 
-    a{color:inherit}
-    img{max-width:100%;display:block}
-    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(900px 500px at 50% -10%, rgba(201,161,74,.16), transparent 60%),
+    linear-gradient(180deg,var(--bg),var(--bg2));
+  line-height:1.6;
+  overflow-x:hidden;
+}
 
-    /* ====== TOPBAR / NAV ====== */
-    .topbar{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter:saturate(180%) blur(12px);
-      background:rgba(15,18,22,.78);
-      border-bottom:1px solid var(--line);
-    }
-    .topbar-inner{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0; gap:14px;
-    }
-    .brand{
-      display:flex; flex-direction:column; gap:2px;
-      min-width:240px;
-    }
-    .brand strong{font-size:1rem; letter-spacing:.2px}
-    .brand span{font-size:.85rem; color:var(--muted)}
-    .nav{
-      display:flex; gap:8px; align-items:center; flex-wrap:wrap;
-      justify-content:flex-end;
-    }
-    .nav a{
-      text-decoration:none;
-      color:var(--muted);
-      font-size:.95rem;
-      padding:8px 10px;
-      border-radius:999px;
-      transition:.18s ease;
-      border:1px solid transparent;
-      outline:none;
-    }
-    .nav a:hover{
-      color:var(--text);
-      background:rgba(255,255,255,.06);
-      border-color:rgba(255,255,255,.06);
-    }
-    .nav a.active{
-      color:var(--text);
-      background:rgba(201,161,74,.14);
-      border-color:rgba(201,161,74,.22);
-    }
-    .nav .pill{
-      color:#0f1216;
-      background:linear-gradient(135deg,var(--gold),var(--gold2));
-      font-weight:900;
-      box-shadow:0 10px 30px rgba(201,161,74,.20);
-      border:0;
-    }
-    .nav .pill:hover{transform:translateY(-1px)}
+/* Fond plomberie discret */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+  opacity:.14;
+  background-size:440px 440px;
+  background-repeat:repeat;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='440' height='440' viewBox='0 0 440 440'%3E%3Cg fill='none' stroke='%23c9a14a' stroke-opacity='0.55' stroke-width='10'%3E%3Cpath d='M120 95h90c20 0 36 16 36 36v28c0 20-16 36-36 36h-24v78c0 30-25 55-55 55s-55-25-55-55v-30h60'/%3E%3Cpath d='M300 110h50v50h-50z'/%3E%3Cpath d='M276 160h100v56c0 20-16 36-36 36h-28v98h-36v-98c-20 0-36-16-36-36v-56z'/%3E%3C/g%3E%3C/svg%3E");
+}
 
-    /* Mobile menu */
-    .burger{
-      display:none;
-      width:44px;height:44px;
-      border-radius:12px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.05);
-      align-items:center;justify-content:center;
-      cursor:pointer;
-    }
-    .burger:focus{outline:none; box-shadow:var(--ring)}
-    .burger span{
-      width:20px;height:2px;background:var(--text);
-      position:relative; display:block;
-    }
-    .burger span:before,.burger span:after{
-      content:""; position:absolute; left:0;
-      width:20px; height:2px; background:var(--text);
-    }
-    .burger span:before{top:-6px}
-    .burger span:after{top:6px}
+/* Glow premium */
+body::after{
+  content:"";
+  position:fixed;
+  inset:-20%;
+  z-index:-3;
+  pointer-events:none;
+  background:
+    radial-gradient(600px 400px at 20% 10%, rgba(201,161,74,.18), transparent 60%),
+    radial-gradient(600px 400px at 80% 30%, rgba(230,207,147,.12), transparent 65%);
+  filter:blur(22px);
+}
 
-    .drawer{
-      display:none;
-      border-top:1px solid var(--line);
-      background:rgba(15,18,22,.92);
-    }
-    .drawer-inner{padding:12px 0}
-    .drawer a{
-      display:block;
-      padding:12px 14px;
-      margin:6px 0;
-      border-radius:14px;
-      color:var(--muted);
-      text-decoration:none;
-      border:1px solid rgba(255,255,255,.06);
-      background:rgba(255,255,255,.04);
-    }
-    .drawer a:hover{color:var(--text); background:rgba(255,255,255,.06)}
-    .drawer a.pill{color:#0f1216; background:linear-gradient(135deg,var(--gold),var(--gold2)); border:0; font-weight:900}
+/* Base */
+a{color:inherit;text-decoration:none}
+.container{max-width:1120px;margin:auto;padding:0 20px}
+/* Topbar */
+.topbar{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter:saturate(180%) blur(12px);
+  background:rgba(15,18,22,.78);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:14px; padding:14px 0;
+}
+.brand{
+  display:flex; flex-direction:column; gap:2px;
+  min-width:240px;
+}
+.brand strong{font-size:1rem; letter-spacing:.2px}
+.brand span{font-size:.85rem; color:var(--muted)}
 
-    /* ====== HERO ====== */
-    header.hero{padding:74px 0 28px}
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.22fr .78fr;
-      gap:18px;
-      align-items:stretch;
-    }
-    .hero-card{
-      background:
-        radial-gradient(1200px 600px at 20% 0%, rgba(201,161,74,.16), transparent 55%),
-        linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      border:1px solid var(--line);
-      border-radius:calc(var(--radius) + 8px);
-      padding:42px;
-      box-shadow:var(--shadow);
-      position:relative;
-      overflow:hidden;
-    }
-    .hero-card::after{
-      content:"";
-      position:absolute; inset:-2px;
-      background:linear-gradient(120deg, rgba(201,161,74,.18), transparent 45%, rgba(255,255,255,.10));
-      opacity:.36;
-      pointer-events:none;
-      mask:linear-gradient(#000, transparent 74%);
-    }
-    .eyebrow{
-      display:inline-flex; gap:8px; align-items:center;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background:rgba(0,0,0,.20);
-      color:var(--muted);
-      font-weight:700;
-      font-size:.92rem;
-    }
-    .hero h1{
-      margin-top:14px;
-      font-size:2.65rem;
-      letter-spacing:.2px;
-      line-height:1.10;
-    }
-    .hero h1 span{color:var(--gold)}
-    .hero p{
-      margin-top:14px;
-      color:var(--muted);
-      max-width:62ch;
-      font-size:1.06rem;
-    }
-    .hero-actions{
-      display:flex; gap:10px; flex-wrap:wrap;
-      margin-top:22px;
-    }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:14px 18px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      text-decoration:none;
-      font-weight:900;
-      transition:.18s ease;
-      gap:10px;
-      background:rgba(255,255,255,.05);
-      user-select:none;
-    }
-    .btn:hover{transform:translateY(-1px); background:rgba(255,255,255,.08)}
-    .btn:focus{outline:none; box-shadow:var(--ring)}
-    .btn-primary{
-      border:none;
-      color:#0f1216;
-      background:linear-gradient(135deg,var(--gold),var(--gold2));
-      box-shadow:0 12px 35px rgba(201,161,74,.24);
-    }
-    .btn-primary:hover{box-shadow:0 16px 45px rgba(201,161,74,.34)}
-    .btn-ghost{background:transparent}
+.nav{
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.nav a{
+  color:var(--muted);
+  font-size:.95rem;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid transparent;
+  transition:.18s ease;
+}
+.nav a:hover{
+  color:var(--text);
+  background:rgba(255,255,255,.06);
+  border-color:rgba(255,255,255,.06);
+}
+.nav a.active{
+  color:var(--text);
+  background:rgba(201,161,74,.14);
+  border-color:rgba(201,161,74,.22);
+}
+.nav .pill{
+  color:#0f1216;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  font-weight:950;
+  border:0;
+  box-shadow:0 10px 30px rgba(201,161,74,.20);
+}
+.nav .pill:hover{transform:translateY(-1px)}
 
-    .kpis{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:12px;
-      margin-top:18px;
-    }
-    .kpi{
-      padding:14px;
-      border-radius:16px;
-      background:rgba(0,0,0,.22);
-      border:1px solid rgba(255,255,255,.10);
-    }
-    .kpi strong{display:block; font-size:1.02rem}
-    .kpi span{color:var(--muted); font-size:.92rem}
+/* Burger */
+.burger{
+  display:none;
+  width:44px;height:44px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  cursor:pointer;
+  align-items:center; justify-content:center;
+}
+.burger:focus{outline:none; box-shadow:var(--ring)}
+.burger span{width:20px;height:2px;background:var(--text);position:relative;display:block}
+.burger span:before,.burger span:after{
+  content:""; position:absolute; left:0;
+  width:20px;height:2px;background:var(--text);
+}
+.burger span:before{top:-6px}
+.burger span:after{top:6px}
 
-    .side{
-      background:linear-gradient(145deg,var(--panel),var(--panel2));
-      border:1px solid var(--line);
-      border-radius:calc(var(--radius) + 8px);
-      padding:22px;
-      box-shadow:var(--shadow);
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-    }
-    .side h2{font-size:1.15rem}
-    .info{display:grid; gap:10px; color:var(--muted); font-size:.98rem}
-    .info a{color:var(--text); text-decoration:none}
-    .info a:hover{text-decoration:underline}
-    .tagrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:2px}
-    .tag{
-      font-size:.85rem;
-      color:var(--muted);
-      padding:8px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      background:rgba(255,255,255,.03);
-    }
+/* Drawer mobile */
+.drawer{
+  display:none;
+  border-top:1px solid var(--line);
+  background:rgba(15,18,22,.92);
+}
+.drawer-inner{padding:12px 0}
+.drawer a{
+  display:block;
+  padding:12px 14px;
+  margin:6px 0;
+  border-radius:14px;
+  color:var(--muted);
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.04);
+}
+.drawer a:hover{color:var(--text); background:rgba(255,255,255,.06)}
+.drawer a.pill{
+  color:#0f1216;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  border:0; font-weight:950;
+}
 
-    /* ====== SECTIONS / CARDS ====== */
-    section{padding:66px 0}
-    .section-title{text-align:center; margin-bottom:28px}
-    .section-title h2{font-size:2rem; margin-bottom:10px}
-    .section-title p{color:var(--muted); max-width:75ch; margin:0 auto}
+/* Hero ULTRA */
+header.hero{padding:78px 0 28px}
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1.22fr .78fr;
+  gap:18px;
+  align-items:stretch;
+}
+.hero-card{
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(201,161,74,.16), transparent 55%),
+    linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+  border:1px solid var(--line);
+  border-radius:calc(var(--radius) + 10px);
+  padding:44px;
+  box-shadow:var(--shadow);
+  position:relative;
+  overflow:hidden;
+}
+.hero-card::after{
+  content:"";
+  position:absolute; inset:-2px;
+  background:linear-gradient(120deg, rgba(201,161,74,.18), transparent 45%, rgba(255,255,255,.10));
+  opacity:.36;
+  pointer-events:none;
+  mask:linear-gradient(#000, transparent 74%);
+}
 
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:16px;
-    }
-    .card{
-      background:linear-gradient(145deg,var(--panel),var(--panel2));
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:22px;
-      transition:.18s ease;
-    }
-    .card:hover{transform:translateY(-2px)}
-    .card h3{color:var(--gold); font-size:1.15rem; margin-bottom:10px}
-    .card p{color:var(--muted)}
-    .card ul{margin-top:10px; padding-left:18px; color:var(--muted)}
-    .card li{margin:6px 0}
+.eyebrow{
+  display:inline-flex; gap:8px; align-items:center;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(0,0,0,.20);
+  color:var(--muted);
+  font-weight:800;
+  font-size:.92rem;
+}
+.hero h1{
+  margin-top:14px;
+  font-size:2.75rem;
+  line-height:1.08;
+  letter-spacing:.2px;
+}
+.hero h1 span{color:var(--gold)}
+.hero p{
+  margin-top:14px;
+  color:var(--muted);
+  max-width:62ch;
+  font-size:1.06rem;
+}
 
-    /* Tabs */
-    .tabs{
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      overflow:hidden;
-      background:rgba(0,0,0,.18);
-    }
-    .tabbar{
-      display:flex;
-      gap:10px;
-      padding:12px;
-      border-bottom:1px solid rgba(255,255,255,.10);
-      background:rgba(0,0,0,.20);
-      flex-wrap:wrap;
-    }
-    .tabbar button{
-      cursor:pointer;
-      border:1px solid rgba(255,255,255,.14);
-      background:rgba(255,255,255,.05);
-      color:var(--text);
-      font-weight:950;
-      padding:10px 14px;
-      border-radius:999px;
-      transition:.18s ease;
-    }
-    .tabbar button:hover{background:rgba(255,255,255,.08)}
-    .tabbar button.active{
-      border:none;
-      color:#0f1216;
-      background:linear-gradient(135deg,var(--gold),var(--gold2));
-    }
-    .tabcontent{padding:18px}
-    .tabpanel{display:none}
-    .tabpanel.active{display:block}
-    .tabpanel ul{padding-left:18px;margin-top:10px;color:var(--muted)}
-    .tabpanel li{margin:6px 0}
-        /* Réalisations */
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:16px;
-    }
-    .shot{
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      overflow:hidden;
-      background:rgba(0,0,0,.18);
-    }
-    .shot .cap{
-      padding:14px 16px;
-      color:var(--muted);
-      border-top:1px solid rgba(255,255,255,.08);
-    }
-    .shot .cap strong{color:var(--text)}
-    .ph{
-      height:180px;
-      background:
-        radial-gradient(800px 220px at 15% 0%, rgba(201,161,74,.18), transparent 55%),
-        linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      display:flex; align-items:center; justify-content:center;
-      color:rgba(245,246,247,.80);
-      font-weight:950;
-      letter-spacing:.3px;
-      position:relative;
-    }
-    .ph small{
-      display:inline-flex;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background:rgba(0,0,0,.22);
-    }
+.hero-actions{
+  display:flex; gap:10px; flex-wrap:wrap;
+  margin-top:22px;
+}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:10px;
+  padding:14px 18px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  font-weight:950;
+  transition:.18s ease;
+  user-select:none;
+}
+.btn:hover{transform:translateY(-1px); background:rgba(255,255,255,.08)}
+.btn:focus{outline:none; box-shadow:var(--ring)}
+.btn-primary{
+  border:none;
+  color:#0f1216;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  box-shadow:0 12px 35px rgba(201,161,74,.24);
+}
+.btn-primary:hover{box-shadow:0 16px 45px rgba(201,161,74,.34)}
+.btn-ghost{background:transparent}
 
-    /* Avis */
-    .reviews{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:16px;
-    }
-    .review{
-      background:linear-gradient(145deg,var(--panel),var(--panel2));
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:20px;
-    }
-    .review .who{
-      display:flex; align-items:center; justify-content:space-between;
-      margin-bottom:10px;
-      gap:10px;
-    }
-    .review strong{color:var(--text)}
-    .stars{color:var(--gold2); letter-spacing:1px; font-weight:950}
-    .review p{color:var(--muted)}
+/* KPIs */
+.kpis{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:18px;
+}
+.kpi{
+  padding:14px;
+  border-radius:16px;
+  background:rgba(0,0,0,.22);
+  border:1px solid rgba(255,255,255,.10);
+}
+.kpi strong{display:block; font-size:1.02rem}
+.kpi span{color:var(--muted); font-size:.92rem}
 
-    /* FAQ accordion */
-    .faq{
-      max-width:860px;
-      margin:0 auto;
-      display:grid;
-      gap:10px;
-    }
-    details{
-      background:rgba(0,0,0,.18);
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:14px 16px;
-    }
-    summary{
-      cursor:pointer;
-      list-style:none;
-      font-weight:950;
-      outline:none;
-    }
-    summary::-webkit-details-marker{display:none}
-    details p{margin-top:8px; color:var(--muted)}
-    details[open]{box-shadow:var(--ring)}
+/* Side contact */
+.side{
+  background:linear-gradient(145deg,var(--panel),var(--panel2));
+  border:1px solid var(--line);
+  border-radius:calc(var(--radius) + 10px);
+  padding:22px;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.side h2{font-size:1.15rem}
+.info{display:grid; gap:10px; color:var(--muted); font-size:.98rem}
+.info a{color:var(--text)}
+.info a:hover{text-decoration:underline}
+.tagrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:2px}
+.tag{
+  font-size:.85rem;
+  color:var(--muted);
+  padding:8px 10px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(255,255,255,.03);
+}
 
-    /* Contact form */
-    .form{
-      max-width:860px;
-      margin:0 auto;
-      background:linear-gradient(145deg,var(--panel),var(--panel2));
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:22px;
-    }
-    .formgrid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-      margin-top:12px;
-    }
-    .field{display:flex; flex-direction:column; gap:6px}
-    label{font-weight:900; color:var(--text); font-size:.95rem}
-    input, textarea, select{
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(0,0,0,.22);
-      color:var(--text);
-      padding:12px 12px;
-      font:inherit;
-      outline:none;
-    }
-    input:focus, textarea:focus, select:focus{box-shadow:var(--ring); border-color:rgba(201,161,74,.35)}
-    textarea{min-height:120px; resize:vertical}
-    .formactions{
-      display:flex; gap:10px; flex-wrap:wrap;
-      margin-top:14px;
-    }
-    .hint{margin-top:10px; color:var(--muted); font-size:.95rem}
+/* Sections base */
+section{padding:66px 0}
+.section-title{text-align:center; margin-bottom:28px}
+.section-title h2{font-size:2rem; margin-bottom:10px}
+.section-title p{color:var(--muted); max-width:75ch; margin:0 auto}
 
-    /* Map */
-    .mapwrap{
-      overflow:hidden;
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-      background:rgba(255,255,255,.02);
-    }
-    .mapwrap iframe{width:100%; height:360px; border:0; display:block}
+/* Cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+}
+.card{
+  background:linear-gradient(145deg,var(--panel),var(--panel2));
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+  transition:.18s ease;
+}
+.card:hover{transform:translateY(-2px)}
+.card h3{color:var(--gold); font-size:1.15rem; margin-bottom:10px}
+.card p{color:var(--muted)}
+.card ul{margin-top:10px; padding-left:18px; color:var(--muted)}
+.card li{margin:6px 0}
 
-    /* Footer */
-    footer{
-      border-top:1px solid var(--line);
-      padding:40px 0 70px;
-      color:var(--muted);
-      text-align:center;
-      background:rgba(0,0,0,.22);
-    }
-    footer strong{color:var(--text)}
+/* Prestations tabs */
+.tabs{
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  overflow:hidden;
+  background:rgba(0,0,0,.18);
+}
+.tabbar{
+  display:flex;
+  gap:10px;
+  padding:12px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  background:rgba(0,0,0,.20);
+  flex-wrap:wrap;
+}
+.tabbar button{
+  cursor:pointer;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.05);
+  color:var(--text);
+  font-weight:950;
+  padding:10px 14px;
+  border-radius:999px;
+  transition:.18s ease;
+}
+.tabbar button:hover{background:rgba(255,255,255,.08)}
+.tabbar button.active{
+  border:none;
+  color:#0f1216;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+}
+.tabcontent{padding:18px}
+.tabpanel{display:none}
+.tabpanel.active{display:block}
+.tabpanel ul{padding-left:18px;margin-top:10px;color:var(--muted)}
+.tabpanel li{margin:6px 0}
 
-    /* Floating CTA */
-    .floatbar{
-      position:fixed;
-      right:14px;
-      bottom:14px;
-      z-index:60;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    }
-    .fab{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      padding:12px 14px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(15,18,22,.88);
-      backdrop-filter: blur(10px);
-      box-shadow:0 16px 44px rgba(0,0,0,.45);
-      text-decoration:none;
-      font-weight:950;
-    }
-    .fab.primary{
-      border:none;
-      color:#0f1216;
-      background:linear-gradient(135deg,var(--gold),var(--gold2));
-    }
+/* Responsive */
+@media (max-width: 980px){
+  .hero-grid{grid-template-columns:1fr}
+  header.hero{padding:56px 0 22px}
+  .hero-card{padding:34px}
+}
+@media (max-width: 720px){
+  .nav{display:none}
+  .burger{display:flex}
+  .kpis{grid-template-columns:1fr}
+  .hero h1{font-size:2.20rem}
+}
 
-    /* Responsive */
-    @media (max-width: 980px){
-      .hero-grid{grid-template-columns:1fr}
-      header.hero{padding:56px 0 22px}
-      .hero-card{padding:32px}
-    }
-    @media (max-width: 720px){
-      .nav{display:none}
-      .burger{display:flex}
-      .kpis{grid-template-columns:1fr}
-      .formgrid{grid-template-columns:1fr}
-      .hero h1{font-size:2.15rem}
-    }
-  </style>
+</style>
 
-  <!-- SEO Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Plumber",
-    "name":"E.I. David Benoit",
-    "url":"https://www.david-plomberie62.fr/",
-    "telephone":"+33781436136",
-    "email":"eidavidbenoit@gmail.com",
-    "areaServed":["Vendin-le-Vieil","Pas-de-Calais","Nord","Somme","Hauts-de-France"],
-    "priceRange":"30€ TTC/h ou sur devis",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"101 Rue Gustave Delory",
-      "postalCode":"62880",
-      "addressLocality":"Vendin-le-Vieil",
-      "addressCountry":"FR"
-    }
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Plumber",
+  "name":"E.I. David Benoit",
+  "url":"https://www.david-plomberie62.fr/",
+  "telephone":"+33781436136",
+  "email":"eidavidbenoit@gmail.com",
+  "areaServed":["Vendin-le-Vieil","Pas-de-Calais","Nord","Somme","Hauts-de-France"],
+  "priceRange":"30€ TTC/h ou sur devis",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"101 Rue Gustave Delory",
+    "postalCode":"62880",
+    "addressLocality":"Vendin-le-Vieil",
+    "addressCountry":"FR"
   }
-  </script>
+}
+</script>
 </head>
 
 <body>
 
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="brand">
-        <strong>E.I. David Benoit</strong>
-        <span>Plomberie • Chauffage • Climatisation — Vendin-le-Vieil</span>
-      </div>
-
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#prestations" data-link="prestations">Prestations</a>
-        <a href="#realisations" data-link="realisations">Réalisations</a>
-        <a href="#avis" data-link="avis">Avis</a>
-        <a href="#tarifs" data-link="tarifs">Tarifs</a>
-        <a href="#zone" data-link="zone">Zone</a>
-        <a href="#contact" class="pill" data-link="contact">Devis gratuit</a>
-      </nav>
-
-      <button class="burger" id="burger" aria-label="Ouvrir le menu">
-        <span></span>
-      </button>
+<!-- Topbar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="brand">
+      <strong>E.I. David Benoit</strong>
+      <span>Plomberie • Chauffage • Climatisation — Vendin-le-Vieil</span>
     </div>
 
-    <div class="drawer" id="drawer" aria-label="Menu mobile">
-      <div class="container drawer-inner">
-        <a href="#prestations">Prestations</a>
-        <a href="#realisations">Réalisations</a>
-        <a href="#avis">Avis</a>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#zone">Zone</a>
-        <a href="#contact" class="pill">Devis gratuit</a>
-      </div>
-    </div>
+    <nav class="nav" aria-label="Navigation">
+      <a href="#prestations" data-link="prestations">Prestations</a>
+      <a href="#recompenses" data-link="recompenses">Récompenses</a>
+      <a href="#avis" data-link="avis">Avis</a>
+      <a href="#tarifs" data-link="tarifs">Tarifs</a>
+      <a href="#zone" data-link="zone">Zone</a>
+      <a href="#formulaire" class="pill" data-link="formulaire">Devis gratuit</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu"><span></span></button>
   </div>
 
-  <header class="hero" id="top">
-    <div class="container hero-grid">
-
-      <div class="hero-card">
-        <div class="eyebrow">✅ Intervention rapide • Travail soigné • Devis gratuit</div>
-        <h1>David <span>Plomberie 62</span></h1>
-        <p>
-          Artisan plombier chauffagiste climatisation à <strong>Vendin-le-Vieil</strong>.
-          Intervention rapide et soignée dans le <strong>62</strong>, avec déplacements possibles <strong>59</strong> et <strong>80</strong> (Hauts-de-France).
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+33781436136">📞 Appeler maintenant</a>
-          <a class="btn btn-ghost" href="#formulaire">📝 Demander un devis</a>
-          <a class="btn btn-ghost" href="mailto:eidavidbenoit@gmail.com">✉️ Email</a>
-        </div>
-
-        <div class="kpis" aria-label="Atouts">
-          <div class="kpi">
-            <strong>Devis gratuit</strong>
-            <span>Réponse rapide selon votre besoin</span>
-          </div>
-          <div class="kpi">
-            <strong>30€ TTC / heure</strong>
-            <span>ou sur devis selon travaux</span>
-          </div>
-          <div class="kpi">
-            <strong>Paiements</strong>
-            <span>CB • Chèque • Espèces • Virement</span>
-          </div>
-          <div class="kpi">
-            <strong>Confiance</strong>
-            <span>Propreté • Ponctualité • Sérieux</span>
-          </div>
-        </div>
-      </div>
-
-      <aside class="side" id="contact">
-        <h2>Coordonnées</h2>
-        <div class="info">
-          <div>📞 <a href="tel:+33781436136">07 81 43 61 36</a></div>
-          <div>✉️ <a href="mailto:eidavidbenoit@gmail.com">eidavidbenoit@gmail.com</a></div>
-          <div>📍 101 Rue Gustave Delory, 62880 Vendin-le-Vieil</div>
-        </div>
-
-        <div class="tagrow" aria-label="Mots-clés">
-          <span class="tag">Dépannage</span>
-          <span class="tag">Rénovation</span>
-          <span class="tag">Installation</span>
-          <span class="tag">Entretien</span>
-          <span class="tag">Urgence</span>
-        </div>
-
-        <div style="margin-top:6px; color:var(--muted); font-size:.95rem">
-          <strong style="color:var(--text)">Disponibilités :</strong> selon planning — intervention rapide.
-        </div>
-      </aside>
-
+  <div class="drawer" id="drawer" aria-label="Menu mobile">
+    <div class="container drawer-inner">
+      <a href="#prestations">Prestations</a>
+      <a href="#recompenses">Récompenses</a>
+      <a href="#avis">Avis</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#zone">Zone</a>
+      <a href="#formulaire" class="pill">Devis gratuit</a>
     </div>
-  </header>
-    <section id="prestations">
-    <div class="container">
-      <div class="section-title">
-        <h2>Prestations</h2>
-        <p>Choisissez votre besoin : des services clairs et une intervention propre, rapide et durable.</p>
-      </div>
+  </div>
+</div>
 
-      <div class="tabs" aria-label="Onglets prestations">
-        <div class="tabbar">
-          <button class="tabbtn active" data-tab="tab-plomberie">Plomberie</button>
-          <button class="tabbtn" data-tab="tab-chauffage">Chauffage</button>
-          <button class="tabbtn" data-tab="tab-clim">Climatisation</button>
-        </div>
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="container hero-grid">
 
-        <div class="tabcontent">
-          <div class="tabpanel active" id="tab-plomberie">
-            <h3 style="color:var(--gold)">Plomberie</h3>
-            <p style="color:var(--muted)">Fuites, robinetterie, sanitaires, dépannage, rénovation complète.</p>
-            <ul>
-              <li>Recherche & réparation de fuite</li>
-              <li>Installation WC / douche / baignoire</li>
-              <li>Rénovation salle de bain</li>
-              <li>Remplacement d’équipements</li>
-            </ul>
-          </div>
-
-          <div class="tabpanel" id="tab-chauffage">
-            <h3 style="color:var(--gold)">Chauffage</h3>
-            <p style="color:var(--muted)">Optimisation, entretien, dépannage et modernisation.</p>
-            <ul>
-              <li>Radiateurs & réseaux : réglages, purge</li>
-              <li>Diagnostic & optimisation consommation</li>
-              <li>Remplacement / modernisation</li>
-              <li>Conseils adaptés à votre logement</li>
-            </ul>
-          </div>
-
-          <div class="tabpanel" id="tab-clim">
-            <h3 style="color:var(--gold)">Climatisation</h3>
-            <p style="color:var(--muted)">Installation, maintenance et optimisation de systèmes performants.</p>
-            <ul>
-              <li>Installation adaptée à la surface</li>
-              <li>Maintenance / entretien</li>
-              <li>Optimisation réglages & consommation</li>
-              <li>Conseils sur le choix du matériel</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div style="height:18px"></div>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Intervention rapide</h3>
-          <p>Prise en charge efficace, avec un travail propre et durable.</p>
-        </div>
-        <div class="card">
-          <h3>Conseil & transparence</h3>
-          <p>Explications claires, options adaptées, devis gratuit si nécessaire.</p>
-        </div>
-        <div class="card">
-          <h3>Finitions soignées</h3>
-          <p>Une prestation sérieuse qui inspire confiance au client.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="realisations">
-    <div class="container">
-      <div class="section-title">
-        <h2>Réalisations</h2>
-        <p>Ajoutez vos photos “avant / après” : c’est ce qui convainc le plus les clients.</p>
-      </div>
-
-      <div class="gallery">
-        <div class="shot">
-          <div class="ph"><small>AVANT / APRÈS – Salle de bain</small></div>
-          <div class="cap"><strong>Rénovation salle de bain</strong><br>Remplacement + finitions propres</div>
-        </div>
-        <div class="shot">
-          <div class="ph"><small>DÉPANNAGE – Fuite</small></div>
-          <div class="cap"><strong>Réparation fuite</strong><br>Diagnostic + remise en service</div>
-        </div>
-        <div class="shot">
-          <div class="ph"><small>INSTALLATION – Chauffage</small></div>
-          <div class="cap"><strong>Optimisation chauffage</strong><br>Réglages + conseils conso</div>
-        </div>
-      </div>
-
-      <p class="hint" style="text-align:center;margin-top:14px">
-        👉 Quand tu voudras, tu m’envoies 3–6 photos et je te remplace les blocs par une vraie galerie.
-      </p>
-    </div>
-  </section>
-
-  <section id="avis">
-    <div class="container">
-      <div class="section-title">
-        <h2>Avis clients</h2>
-        <p>Une section rassurante. On pourra ensuite remplacer par vos vrais avis.</p>
-      </div>
-
-      <div class="reviews">
-        <div class="review">
-          <div class="who">
-            <strong>Client – Vendin-le-Vieil</strong>
-            <span class="stars">★★★★★</span>
-          </div>
-          <p>Intervention rapide, travail propre et explications claires. Très sérieux.</p>
-        </div>
-        <div class="review">
-          <div class="who">
-            <strong>Client – Lens</strong>
-            <span class="stars">★★★★★</span>
-          </div>
-          <p>Devis transparent, ponctuel, finitions nickel. Je recommande.</p>
-        </div>
-        <div class="review">
-          <div class="who">
-            <strong>Client – Liévin</strong>
-            <span class="stars">★★★★★</span>
-          </div>
-          <p>Dépannage efficace et rapide, bon contact et travail soigné.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="tarifs">
-    <div class="container">
-      <div class="section-title">
-        <h2>Tarifs & Paiements</h2>
-        <p>Simple, clair, pro : vous savez à quoi vous attendre.</p>
-      </div>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Main d’œuvre</h3>
-          <p style="font-size:2rem;font-weight:950;color:var(--gold2);margin:8px 0 6px">30€ TTC / h</p>
-          <p>Ou <strong>sur devis</strong> selon la nature des travaux demandés.</p>
-        </div>
-
-        <div class="card">
-          <h3>Devis</h3>
-          <p>Devis <strong>gratuit</strong> — réponse rapide selon votre demande.</p>
-          <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn btn-primary" href="tel:+33781436136">📞 Appeler</a>
-            <a class="btn btn-ghost" href="#formulaire">📝 Demander un devis</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Paiements acceptés</h3>
-          <p>Carte bancaire • chèque • espèces • virement bancaire.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="container">
-      <div class="section-title">
-        <h2>Questions fréquentes</h2>
-        <p>Réponses simples et rassurantes (ça convertit très bien).</p>
-      </div>
-
-      <div class="faq">
-        <details>
-          <summary>En combien de temps pouvez-vous intervenir ?</summary>
-          <p>Selon planning et urgence. Appelez-moi et je vous donne un créneau rapidement.</p>
-        </details>
-        <details>
-          <summary>Faites-vous des devis gratuits ?</summary>
-          <p>Oui. Le devis est gratuit : je vous propose une solution claire et adaptée.</p>
-        </details>
-        <details>
-          <summary>Dans quelles zones intervenez-vous ?</summary>
-          <p>Vendin-le-Vieil et alentours, Pas-de-Calais (62), déplacements possibles 59 et 80.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section id="zone">
-    <div class="container">
-      <div class="section-title">
-        <h2>Zone d’intervention</h2>
-        <p>Vendin-le-Vieil et alentours • 62 • déplacements possibles 59 & 80 (Hauts-de-France).</p>
-      </div>
-
-      <div class="mapwrap" aria-label="Carte">
-        <iframe
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=101%20Rue%20Gustave%20Delory%2062880%20Vendin-le-Vieil&output=embed">
-        </iframe>
-      </div>
-
-      <p style="margin-top:16px; text-align:center; color:var(--muted)">
-        📍 Adresse : <strong style="color:var(--text)">101 Rue Gustave Delory, 62880 Vendin-le-Vieil</strong>
-      </p>
-    </div>
-  </section>
-    <section id="formulaire">
-    <div class="container">
-      <div class="section-title">
-        <h2>Demande de devis</h2>
-        <p>Remplissez, puis envoyez : l’email se prépare automatiquement (sans serveur).</p>
-      </div>
-
-      <div class="form">
-        <div class="formgrid">
-          <div class="field">
-            <label for="nom">Nom</label>
-            <input id="nom" type="text" placeholder="Votre nom" autocomplete="name">
-          </div>
-          <div class="field">
-            <label for="tel">Téléphone</label>
-            <input id="tel" type="tel" placeholder="Votre téléphone" autocomplete="tel">
-          </div>
-          <div class="field">
-            <label for="ville">Ville</label>
-            <input id="ville" type="text" placeholder="Votre ville">
-          </div>
-          <div class="field">
-            <label for="type">Type de demande</label>
-            <select id="type">
-              <option>Plomberie</option>
-              <option>Chauffage</option>
-              <option>Climatisation</option>
-              <option>Dépannage / Urgence</option>
-              <option>Autre</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="field" style="margin-top:12px">
-          <label for="msg">Votre message</label>
-          <textarea id="msg" placeholder="Décrivez votre besoin (fuite, installation, rénovation, etc.)"></textarea>
-        </div>
-
-        <div class="formactions">
-          <a class="btn btn-primary" id="sendMail" href="#">✉️ Envoyer la demande</a>
-          <a class="btn btn-ghost" href="tel:+33781436136">📞 Appeler</a>
-          <a class="btn btn-ghost" href="mailto:eidavidbenoit@gmail.com">✉️ Email direct</a>
-        </div>
-
-        <div class="hint">Astuce : ajoutez vos photos en pièce jointe dans l’email après ouverture.</div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
+    <div class="hero-card">
+      <div class="eyebrow">✅ Intervention rapide • Travail soigné • Devis gratuit</div>
+      <h1>David <span>Plomberie 62</span></h1>
       <p>
-        <strong>E.I. David Benoit</strong> — Plomberie • Chauffage • Climatisation<br>
-        Vendin-le-Vieil • Hauts-de-France • 62 / 59 / 80<br><br>
-        📞 <a href="tel:+33781436136">07 81 43 61 36</a> •
-        ✉️ <a href="mailto:eidavidbenoit@gmail.com">eidavidbenoit@gmail.com</a><br><br>
-        © 2026 — Tous droits réservés
+        Artisan plombier chauffagiste climatisation à <strong>Vendin-le-Vieil</strong>.
+        Intervention rapide et soignée dans le <strong>62</strong>, avec déplacements possibles <strong>59</strong> et <strong>80</strong> (Hauts-de-France).
       </p>
-    </div>
-  </footer>
 
-  <!-- Floating CTA -->
-  <div class="floatbar" aria-label="Actions rapides">
-    <a class="fab primary" href="tel:+33781436136">📞 Appeler</a>
-    <a class="fab" href="#formulaire">📝 Devis</a>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+33781436136">📞 Appeler maintenant</a>
+        <a class="btn btn-ghost" href="#formulaire">📝 Demander un devis</a>
+        <a class="btn btn-ghost" href="#prestations">🧰 Voir les prestations</a>
+      </div>
+
+      <div class="kpis" aria-label="Atouts">
+        <div class="kpi">
+          <strong>Devis gratuit</strong>
+          <span>Réponse rapide selon votre besoin</span>
+        </div>
+        <div class="kpi">
+          <strong>30€ TTC / heure</strong>
+          <span>ou sur devis selon travaux</span>
+        </div>
+        <div class="kpi">
+          <strong>Paiements</strong>
+          <span>CB • Chèque • Espèces • Virement</span>
+        </div>
+        <div class="kpi">
+          <strong>Confiance</strong>
+          <span>Propreté • Ponctualité • Sérieux</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="side" id="contact">
+      <h2>Coordonnées</h2>
+      <div class="info">
+        <div>📞 <a href="tel:+33781436136">07 81 43 61 36</a></div>
+        <div>✉️ <a href="mailto:eidavidbenoit@gmail.com">eidavidbenoit@gmail.com</a></div>
+        <div>📍 101 Rue Gustave Delory, 62880 Vendin-le-Vieil</div>
+      </div>
+
+      <div class="tagrow" aria-label="Mots-clés">
+        <span class="tag">Dépannage</span>
+        <span class="tag">Rénovation</span>
+        <span class="tag">Installation</span>
+        <span class="tag">Entretien</span>
+        <span class="tag">Urgence</span>
+      </div>
+
+      <div style="margin-top:6px; color:var(--muted); font-size:.95rem">
+        <strong style="color:var(--text)">Disponibilités :</strong> selon planning — intervention rapide.
+      </div>
+    </aside>
+
+  </div>
+</header>
+<section id="prestations">
+  <div class="container">
+    <div class="section-title">
+      <h2>Prestations</h2>
+      <p>Des interventions propres, efficaces et durables – adaptées à votre logement ou local.</p>
+    </div>
+
+    <div class="tabs" aria-label="Onglets prestations">
+      <div class="tabbar">
+        <button class="tabbtn active" data-tab="tab-plomberie">Plomberie</button>
+        <button class="tabbtn" data-tab="tab-chauffage">Chauffage</button>
+        <button class="tabbtn" data-tab="tab-clim">Climatisation</button>
+      </div>
+
+      <div class="tabcontent">
+        <div class="tabpanel active" id="tab-plomberie">
+          <h3 style="color:var(--gold);font-size:1.18rem;margin-bottom:8px">Plomberie</h3>
+          <p style="color:var(--muted)">Fuites, robinetterie, sanitaires, dépannage, rénovation complète.</p>
+          <ul>
+            <li>Recherche & réparation de fuite</li>
+            <li>Installation WC / douche / baignoire</li>
+            <li>Rénovation salle de bain</li>
+            <li>Remplacement d’équipements</li>
+          </ul>
+        </div>
+
+        <div class="tabpanel" id="tab-chauffage">
+          <h3 style="color:var(--gold);font-size:1.18rem;margin-bottom:8px">Chauffage</h3>
+          <p style="color:var(--muted)">Optimisation, entretien, dépannage et modernisation.</p>
+          <ul>
+            <li>Radiateurs & réseaux : réglages, purge</li>
+            <li>Diagnostic & optimisation consommation</li>
+            <li>Remplacement / modernisation</li>
+            <li>Conseils adaptés à votre logement</li>
+          </ul>
+        </div>
+
+        <div class="tabpanel" id="tab-clim">
+          <h3 style="color:var(--gold);font-size:1.18rem;margin-bottom:8px">Climatisation</h3>
+          <p style="color:var(--muted)">Installation, maintenance et optimisation de systèmes performants.</p>
+          <ul>
+            <li>Installation adaptée à la surface</li>
+            <li>Maintenance / entretien</li>
+            <li>Optimisation réglages & consommation</li>
+            <li>Conseils sur le choix du matériel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:18px"></div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Intervention rapide</h3>
+        <p>Prise en charge efficace, avec un travail propre et durable.</p>
+      </div>
+      <div class="card">
+        <h3>Conseil & transparence</h3>
+        <p>Explications claires, options adaptées, devis gratuit si nécessaire.</p>
+      </div>
+      <div class="card">
+        <h3>Finitions soignées</h3>
+        <p>Une prestation sérieuse qui inspire confiance au client.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recompenses">
+  <div class="container">
+    <div class="section-title">
+      <h2>Récompenses & sérieux</h2>
+      <p>Des distinctions qui prouvent l’exigence, la précision et la qualité du travail.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card" style="background:radial-gradient(520px 220px at 20% 0%, rgba(201,161,74,.18), transparent 55%),linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.03));">
+        <div style="font-size:1.9rem;margin-bottom:8px">🥈</div>
+        <h3 style="margin-bottom:6px">WorldSkills – 2021</h3>
+        <p>Médaille d’argent • participation & performance en compétition.</p>
+      </div>
+
+      <div class="card" style="background:radial-gradient(520px 220px at 20% 0%, rgba(201,161,74,.18), transparent 55%),linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.03));">
+        <div style="font-size:1.9rem;margin-bottom:8px">🥈</div>
+        <h3 style="margin-bottom:6px">Meilleurs Apprentis de France – 2023</h3>
+        <p>Médaille d’argent • exigence & précision.</p>
+      </div>
+
+      <div class="card" style="background:radial-gradient(520px 220px at 20% 0%, rgba(230,207,147,.18), transparent 55%),linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.03));">
+        <div style="font-size:1.9rem;margin-bottom:8px">🥇</div>
+        <h3 style="margin-bottom:6px">WorldSkills – 2025</h3>
+        <p>Médaille d’or • excellence & sérieux.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="avis">
+  <div class="container">
+    <div class="section-title">
+      <h2>Avis clients</h2>
+      <p>Une section rassurante. Vous pourrez ensuite remplacer par vos vrais avis.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3 style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+          Client – Vendin-le-Vieil <span style="color:var(--gold2);letter-spacing:1px">★★★★★</span>
+        </h3>
+        <p>Intervention rapide, travail propre et explications claires. Très sérieux.</p>
+      </div>
+
+      <div class="card">
+        <h3 style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+          Client – Lens <span style="color:var(--gold2);letter-spacing:1px">★★★★★</span>
+        </h3>
+        <p>Devis transparent, ponctuel, finitions nickel. Je recommande.</p>
+      </div>
+
+      <div class="card">
+        <h3 style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+          Client – Liévin <span style="color:var(--gold2);letter-spacing:1px">★★★★★</span>
+        </h3>
+        <p>Dépannage efficace et rapide, bon contact et travail soigné.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="tarifs">
+  <div class="container">
+    <div class="section-title">
+      <h2>Tarifs & Paiements</h2>
+      <p>Transparence et simplicité : vous savez à quoi vous attendre.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Main d’œuvre</h3>
+        <p style="font-size:2.05rem;font-weight:950;color:var(--gold2);margin:8px 0 6px">30€ TTC / h</p>
+        <p>Ou <strong style="color:var(--text)">sur devis</strong> selon la nature des travaux demandés.</p>
+      </div>
+
+      <div class="card">
+        <h3>Devis</h3>
+        <p><strong style="color:var(--text)">Devis gratuit</strong> — réponse rapide selon votre demande.</p>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="tel:+33781436136">📞 Appeler</a>
+          <a class="btn btn-ghost" href="#formulaire">📝 Formulaire devis</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Paiements acceptés</h3>
+        <p>Carte bancaire • chèque • espèces • virement bancaire.</p>
+        <p style="color:var(--muted); margin-top:8px">Paiement simple et sécurisé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-title">
+      <h2>Questions fréquentes</h2>
+      <p>Réponses simples et rassurantes (ça convertit très bien).</p>
+    </div>
+
+    <div style="max-width:860px;margin:0 auto;display:grid;gap:10px">
+      <details style="background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:16px;padding:14px 16px">
+        <summary style="cursor:pointer;list-style:none;font-weight:950">En combien de temps pouvez-vous intervenir ?</summary>
+        <p style="margin-top:8px;color:var(--muted)">Selon planning et urgence. Appelez-moi et je vous propose un créneau rapidement.</p>
+      </details>
+
+      <details style="background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:16px;padding:14px 16px">
+        <summary style="cursor:pointer;list-style:none;font-weight:950">Faites-vous des devis gratuits ?</summary>
+        <p style="margin-top:8px;color:var(--muted)">Oui, le devis est gratuit. Je vous propose une solution claire et adaptée.</p>
+      </details>
+
+      <details style="background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:16px;padding:14px 16px">
+        <summary style="cursor:pointer;list-style:none;font-weight:950">Dans quelles zones intervenez-vous ?</summary>
+        <p style="margin-top:8px;color:var(--muted)">Vendin-le-Vieil et alentours, Pas-de-Calais (62), déplacements possibles 59 et 80 (Hauts-de-France).</p>
+      </details>
+
+      <details style="background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:16px;padding:14px 16px">
+        <summary style="cursor:pointer;list-style:none;font-weight:950">Quels moyens de paiement acceptez-vous ?</summary>
+        <p style="margin-top:8px;color:var(--muted)">Carte bancaire, chèque, espèces et virement bancaire.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="zone">
+  <div class="container">
+    <div class="section-title">
+      <h2>Zone d’intervention</h2>
+      <p>Vendin-le-Vieil et alentours • 62 • déplacements possibles 59 & 80 (Hauts-de-France).</p>
+    </div>
+
+    <div style="overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);background:rgba(255,255,255,.02)">
+      <iframe
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        style="width:100%;height:360px;border:0;display:block"
+        src="https://www.google.com/maps?q=101%20Rue%20Gustave%20Delory%2062880%20Vendin-le-Vieil&output=embed">
+      </iframe>
+    </div>
+
+    <p style="margin-top:16px; text-align:center; color:var(--muted)">
+      📍 Adresse : <strong style="color:var(--text)">101 Rue Gustave Delory, 62880 Vendin-le-Vieil</strong>
+    </p>
+  </div>
+</section>
+
+<section id="formulaire">
+  <div class="container">
+    <div class="section-title">
+      <h2>Demande de devis</h2>
+      <p>Remplissez, puis envoyez : l’email se prépare automatiquement (compatible GitHub Pages).</p>
+    </div>
+
+    <div style="max-width:860px;margin:0 auto;background:linear-gradient(145deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:var(--radius);padding:22px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px" class="formgrid">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <label for="nom" style="font-weight:950">Nom</label>
+          <input id="nom" type="text" placeholder="Votre nom" autocomplete="name"
+            style="border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.22);color:var(--text);padding:12px 12px;outline:none">
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <label for="tel" style="font-weight:950">Téléphone</label>
+          <input id="tel" type="tel" placeholder="Votre téléphone" autocomplete="tel"
+            style="border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.22);color:var(--text);padding:12px 12px;outline:none">
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <label for="ville" style="font-weight:950">Ville</label>
+          <input id="ville" type="text" placeholder="Votre ville"
+            style="border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.22);color:var(--text);padding:12px 12px;outline:none">
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <label for="type" style="font-weight:950">Type de demande</label>
+          <select id="type"
+            style="border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.22);color:var(--text);padding:12px 12px;outline:none">
+            <option>Plomberie</option>
+            <option>Chauffage</option>
+            <option>Climatisation</option>
+            <option>Dépannage / Urgence</option>
+            <option>Autre</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:6px;margin-top:12px">
+        <label for="msg" style="font-weight:950">Votre message</label>
+        <textarea id="msg" placeholder="Décrivez votre besoin (fuite, installation, rénovation, etc.)"
+          style="min-height:120px;resize:vertical;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.22);color:var(--text);padding:12px 12px;outline:none"></textarea>
+      </div>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+        <a class="btn btn-primary" id="sendMail" href="#">✉️ Envoyer la demande</a>
+        <a class="btn btn-ghost" href="tel:+33781436136">📞 Appeler</a>
+        <a class="btn btn-ghost" href="mailto:eidavidbenoit@gmail.com">✉️ Email direct</a>
+      </div>
+
+      <div style="margin-top:10px;color:var(--muted);font-size:.95rem">
+        Astuce : vous pourrez ajouter vos photos en pièce jointe dans l’email après ouverture.
+      </div>
+    </div>
+  </div>
+</section>
+<footer style="border-top:1px solid var(--line);padding:40px 0 70px;color:var(--muted);text-align:center;background:rgba(0,0,0,.22)">
+  <div class="container">
+    <p>
+      <strong style="color:var(--text)">E.I. David Benoit</strong> — Plomberie • Chauffage • Climatisation<br>
+      Vendin-le-Vieil • Hauts-de-France • 62 / 59 / 80<br><br>
+      📞 <a href="tel:+33781436136" style="color:var(--text)">07 81 43 61 36</a> •
+      ✉️ <a href="mailto:eidavidbenoit@gmail.com" style="color:var(--text)">eidavidbenoit@gmail.com</a><br><br>
+      © 2026 — Tous droits réservés
+    </p>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<div style="position:fixed;right:14px;bottom:14px;z-index:60;display:flex;flex-direction:column;gap:10px" aria-label="Actions rapides">
+  <a class="btn btn-primary" href="tel:+33781436136" style="padding:12px 14px">📞 Appeler</a>
+  <a class="btn" href="#formulaire" style="padding:12px 14px;background:rgba(15,18,22,.88);backdrop-filter:blur(10px)">📝 Devis</a>
+</div>
+
+<!-- Chatbot (100% local, sans serveur) -->
+<div id="chatFab" class="btn" style="
+  position:fixed; left:14px; bottom:14px; z-index:70;
+  padding:12px 14px; border-radius:999px;
+  background:rgba(15,18,22,.88); backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 16px 44px rgba(0,0,0,.45);
+  cursor:pointer;
+">💬 Chat</div>
+
+<div id="chatBox" style="
+  position:fixed; left:14px; bottom:76px; z-index:80;
+  width:min(360px, calc(100vw - 28px));
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  background:rgba(15,18,22,.92);
+  backdrop-filter: blur(12px);
+  box-shadow:0 18px 60px rgba(0,0,0,.55);
+  display:none; overflow:hidden;
+">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.10)">
+    <strong>Assistant David Plomberie</strong>
+    <button id="chatClose" style="background:transparent;border:0;color:var(--text);font-size:18px;cursor:pointer">✕</button>
   </div>
 
-  <script>
-    // Menu mobile
-    (function(){
-      const burger = document.getElementById('burger');
-      const drawer = document.getElementById('drawer');
-      if(!burger || !drawer) return;
+  <div id="chatMsgs" style="padding:12px 14px;max-height:320px;overflow:auto;display:grid;gap:10px"></div>
 
-      burger.addEventListener('click', () => {
-        const open = drawer.style.display === 'block';
-        drawer.style.display = open ? 'none' : 'block';
-      });
+  <div style="display:flex;gap:10px;padding:12px 14px;border-top:1px solid rgba(255,255,255,.10)">
+    <input id="chatInput" placeholder="Ex: fuite, devis, urgence..."
+      style="flex:1;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.22);color:var(--text);padding:10px 12px;outline:none">
+    <button id="chatSend" class="btn btn-primary" style="padding:10px 14px">Envoyer</button>
+  </div>
+</div>
 
-      drawer.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => drawer.style.display = 'none');
-      });
-    })();
+<script>
+/* ===== Menu mobile ===== */
+(function(){
+  const burger = document.getElementById('burger');
+  const drawer = document.getElementById('drawer');
+  if(!burger || !drawer) return;
 
-    // Tabs (onglets)
-    (function () {
-      const buttons = document.querySelectorAll('.tabbtn');
-      const panels = document.querySelectorAll('.tabpanel');
-      if (!buttons.length || !panels.length) return;
+  burger.addEventListener('click', () => {
+    const open = drawer.style.display === 'block';
+    drawer.style.display = open ? 'none' : 'block';
+  });
 
-      buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const targetId = btn.getAttribute('data-tab');
-          buttons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          panels.forEach(p => p.classList.toggle('active', p.id === targetId));
-        });
-      });
-    })();
+  drawer.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => drawer.style.display = 'none');
+  });
+})();
 
-    // Nav active (surbrillance selon section)
-    (function(){
-      const links = document.querySelectorAll('.nav a[data-link]');
-      const sections = ['prestations','realisations','avis','tarifs','zone','contact','formulaire']
-        .map(id => document.getElementById(id))
-        .filter(Boolean);
+/* ===== Onglets prestations ===== */
+(function(){
+  const buttons = document.querySelectorAll('.tabbtn');
+  const panels = document.querySelectorAll('.tabpanel');
+  if(!buttons.length || !panels.length) return;
 
-      if(!links.length || !sections.length) return;
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-tab');
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      panels.forEach(p => p.classList.toggle('active', p.id === targetId));
+    });
+  });
+})();
 
-      const byId = {};
-      links.forEach(a => byId[a.dataset.link] = a);
+/* ===== Nav active selon section ===== */
+(function(){
+  const links = document.querySelectorAll('.nav a[data-link]');
+  const ids = ['prestations','recompenses','avis','tarifs','zone','formulaire','contact'];
+  const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
+  if(!links.length || !sections.length) return;
 
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            const id = entry.target.id;
-            links.forEach(l => l.classList.remove('active'));
-            const el = byId[id];
-            if(el) el.classList.add('active');
-          }
-        });
-      }, { rootMargin: "-45% 0px -45% 0px", threshold: 0.01 });
+  const byId = {};
+  links.forEach(a => byId[a.dataset.link] = a);
 
-      sections.forEach(s => obs.observe(s));
-    })();
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const id = entry.target.id;
+        links.forEach(l => l.classList.remove('active'));
+        if(byId[id]) byId[id].classList.add('active');
+      }
+    });
+  }, { rootMargin: "-45% 0px -45% 0px", threshold: 0.01 });
 
-    // Formulaire -> mailto pré-rempli
-    (function(){
-      const btn = document.getElementById('sendMail');
-      if(!btn) return;
+  sections.forEach(s => obs.observe(s));
+})();
 
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const nom = document.getElementById('nom')?.value || '';
-        const tel = document.getElementById('tel')?.value || '';
-        const ville = document.getElementById('ville')?.value || '';
-        const type = document.getElementById('type')?.value || '';
-        const msg = document.getElementById('msg')?.value || '';
+/* ===== Formulaire -> mailto pré-rempli ===== */
+(function(){
+  const btn = document.getElementById('sendMail');
+  if(!btn) return;
 
-        const subject = encodeURIComponent('Demande de devis – ' + (type || 'Plomberie'));
-        const body = encodeURIComponent(
-          'Bonjour,\n\n' +
-          'Je souhaite un devis.\n\n' +
-          'Nom : ' + nom + '\n' +
-          'Téléphone : ' + tel + '\n' +
-          'Ville : ' + ville + '\n' +
-          'Type : ' + type + '\n\n' +
-          'Détails :\n' + msg + '\n\n' +
-          'Merci.\n'
-        );
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const nom = document.getElementById('nom')?.value || '';
+    const tel = document.getElementById('tel')?.value || '';
+    const ville = document.getElementById('ville')?.value || '';
+    const type = document.getElementById('type')?.value || '';
+    const msg = document.getElementById('msg')?.value || '';
 
-        window.location.href = 'mailto:eidavidbenoit@gmail.com?subject=' + subject + '&body=' + body;
-      });
-    })();
-  </script>
+    const subject = encodeURIComponent('Demande de devis – ' + (type || 'Plomberie'));
+    const body = encodeURIComponent(
+      'Bonjour,\n\n' +
+      'Je souhaite un devis.\n\n' +
+      'Nom : ' + nom + '\n' +
+      'Téléphone : ' + tel + '\n' +
+      'Ville : ' + ville + '\n' +
+      'Type : ' + type + '\n\n' +
+      'Détails :\n' + msg + '\n\n' +
+      'Merci.\n'
+    );
+
+    window.location.href = 'mailto:eidavidbenoit@gmail.com?subject=' + subject + '&body=' + body;
+  });
+})();
+
+/* ===== Chatbot local ===== */
+(function(){
+  const fab = document.getElementById('chatFab');
+  const box = document.getElementById('chatBox');
+  const close = document.getElementById('chatClose');
+  const msgs = document.getElementById('chatMsgs');
+  const input = document.getElementById('chatInput');
+  const send = document.getElementById('chatSend');
+
+  function addMsg(text, who){
+    const b = document.createElement('div');
+    b.style.padding = "10px 12px";
+    b.style.borderRadius = "14px";
+    b.style.border = "1px solid rgba(255,255,255,.10)";
+    b.style.background = who === 'me' ? "rgba(201,161,74,.16)" : "rgba(255,255,255,.05)";
+    b.style.color = "var(--text)";
+    b.style.justifySelf = who === 'me' ? "end" : "start";
+    b.textContent = text;
+    msgs.appendChild(b);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  function botReply(q){
+    const t = q.toLowerCase();
+
+    if(t.includes('urgence') || t.includes('fuite') || t.includes('dépannage') || t.includes('depannage')){
+      addMsg("Pour une urgence (fuite / dépannage), le plus rapide : appelez-moi au 07 81 43 61 36.", "bot");
+      addMsg("👉 Cliquez sur “Appeler” (bouton à droite en bas).", "bot");
+      return;
+    }
+    if(t.includes('devis') || t.includes('prix') || t.includes('tarif')){
+      addMsg("Devis gratuit ✅ Main d’œuvre : 30€ TTC/h ou sur devis selon travaux.", "bot");
+      addMsg("👉 Vous pouvez remplir “Demande de devis” (bouton Devis en bas).", "bot");
+      return;
+    }
+    if(t.includes('zone') || t.includes('secteur') || t.includes('où') || t.includes('ou')){
+      addMsg("J’interviens à Vendin-le-Vieil et alentours (62), déplacements possibles 59 & 80 (Hauts-de-France).", "bot");
+      addMsg("👉 Descendez sur “Zone d’intervention” pour voir la carte.", "bot");
+      return;
+    }
+    if(t.includes('chauffage') || t.includes('clim') || t.includes('climatisation') || t.includes('plomberie')){
+      addMsg("D’accord ✅ Dites-moi votre ville + votre besoin (installation / entretien / dépannage) et je vous guide.", "bot");
+      return;
+    }
+
+    addMsg("Je peux vous aider 👍 Tapez : “urgence”, “devis”, “zone”, “plomberie”, “chauffage” ou “climatisation”.", "bot");
+  }
+
+  function openChat(){
+    box.style.display = "block";
+    if(!msgs.dataset.init){
+      msgs.dataset.init = "1";
+      addMsg("Bonjour 👋 Je suis l’assistant du site. Vous cherchez un devis, une urgence ou une info sur la zone ?", "bot");
+      addMsg("Exemples : “fuite”, “devis”, “zone”.", "bot");
+    }
+    setTimeout(()=>input.focus(), 50);
+  }
+
+  fab.addEventListener('click', () => {
+    if(box.style.display === "block") box.style.display = "none";
+    else openChat();
+  });
+  close.addEventListener('click', () => box.style.display = "none");
+
+  function handleSend(){
+    const v = (input.value || "").trim();
+    if(!v) return;
+    addMsg(v, "me");
+    input.value = "";
+    setTimeout(()=>botReply(v), 150);
+  }
+
+  send.addEventListener('click', handleSend);
+  input.addEventListener('keydown', (e)=>{ if(e.key==="Enter") handleSend(); });
+})();
+</script>
 
 </body>
 </html>
