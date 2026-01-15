@@ -2,788 +2,538 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0B0F14" />
+  <title>David Plomberie 62 – Plombier Chauffagiste Climatisation | Vendin-le-Vieil</title>
 
-  <!-- SEO -->
-  <title>Plombier Chauffagiste Climatisation à Vendin-le-Vieil (62) | E.I. David Benoit</title>
-  <meta name="description" content="E.I. David Benoit — Plomberie, Chauffage & Climatisation à Vendin-le-Vieil et alentours. Intervention Pas-de-Calais (62), Nord (59) et Somme (80) — Hauts-de-France. Devis gratuit. Tarif 30€ TTC/h ou sur devis." />
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-  <link rel="canonical" href="https://eloisebehra-lab.github.io/eidavidbenoit-site/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="E.I. David Benoit – Plomberie, Chauffage et Climatisation à Vendin-le-Vieil. Intervention 62, 59, 80 (Hauts-de-France). Devis gratuit. 30€ TTC/h ou sur devis. Artisan médaillé WorldSkills." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.david-plomberie62.fr/">
 
   <!-- Open Graph -->
+  <meta property="og:title" content="David Plomberie 62 – Plomberie, Chauffage, Climatisation" />
+  <meta property="og:description" content="Intervention Vendin-le-Vieil & alentours • 62 / 59 / 80 • Devis gratuit • 30€ TTC/h ou sur devis • Artisan médaillé WorldSkills" />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="E.I. David Benoit — Plomberie • Chauffage • Climatisation" />
-  <meta property="og:description" content="Vendin-le-Vieil & alentours — Intervention 62 / 59 / 80 (Hauts-de-France). Devis gratuit. 30€ TTC/h ou sur devis." />
-  <meta property="og:url" content="https://eloisebehra-lab.github.io/eidavidbenoit-site/" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://david-plomberie62.fr/" />
 
-  <!-- Données structurées (Local SEO) -->
+  <!-- Theme -->
+  <meta name="theme-color" content="#0f1216" />
+
+  <style>
+    :root{
+      --bg:#0f1216;
+      --bg2:#0b0e12;
+      --panel:#161a20;
+      --panel2:#12161c;
+      --gold:#c9a14a;
+      --gold2:#e0c27a;
+      --text:#f5f6f7;
+      --muted:#b5b8bd;
+      --line:rgba(255,255,255,.07);
+      --shadow:0 18px 60px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+      background:radial-gradient(900px 500px at 50% -10%, rgba(201,161,74,.15), transparent 60%),
+                 linear-gradient(180deg,var(--bg),var(--bg2));
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+    /* Top bar */
+    .topbar{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter:saturate(180%) blur(12px);
+      background:rgba(15,18,22,.75);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:16px;
+    }
+    .brand{
+      display:flex; flex-direction:column; gap:2px;
+    }
+    .brand strong{font-size:1rem; letter-spacing:.2px}
+    .brand span{font-size:.85rem; color:var(--muted)}
+    .nav{
+      display:flex; gap:14px; align-items:center; flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .nav a{
+      text-decoration:none;
+      color:var(--muted);
+      font-size:.95rem;
+      padding:8px 10px;
+      border-radius:999px;
+      transition:.2s ease;
+    }
+    .nav a:hover{
+      color:var(--text);
+      background:rgba(255,255,255,.06);
+    }
+    .nav .pill{
+      color:#0f1216;
+      background:linear-gradient(135deg,var(--gold),var(--gold2));
+      font-weight:700;
+      box-shadow:0 10px 30px rgba(201,161,74,.25);
+    }
+    .nav .pill:hover{transform:translateY(-1px)}
+
+    /* Hero */
+    header.hero{
+      padding:80px 0 30px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:28px;
+      align-items:stretch;
+    }
+    .hero-card{
+      background:radial-gradient(1200px 600px at 20% 0%, rgba(201,161,74,.14), transparent 55%),
+                 linear-gradient(145deg, #1a1f27, #0f1216);
+      border:1px solid var(--line);
+      border-radius:calc(var(--radius) + 6px);
+      padding:44px;
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero-card:after{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:linear-gradient(120deg, rgba(201,161,74,.22), transparent 40%, rgba(255,255,255,.06));
+      opacity:.35;
+      pointer-events:none;
+      mask:linear-gradient(#000, transparent 70%);
+    }
+    .hero h1{
+      font-size:2.6rem;
+      letter-spacing:.2px;
+      line-height:1.15;
+    }
+    .hero h1 span{color:var(--gold)}
+    .hero p{
+      margin-top:16px;
+      color:var(--muted);
+      max-width: 60ch;
+      font-size:1.05rem;
+    }
+    .hero-actions{
+      display:flex; gap:12px; flex-wrap:wrap;
+      margin-top:26px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:14px 18px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      text-decoration:none;
+      font-weight:700;
+      transition:.2s ease;
+      gap:10px;
+      background:rgba(255,255,255,.04);
+    }
+    .btn:hover{transform:translateY(-1px); background:rgba(255,255,255,.06)}
+    .btn-primary{
+      border:none;
+      color:#0f1216;
+      background:linear-gradient(135deg,var(--gold),var(--gold2));
+      box-shadow:0 12px 35px rgba(201,161,74,.25);
+    }
+    .btn-primary:hover{box-shadow:0 16px 45px rgba(201,161,74,.35)}
+    .kpis{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+      margin-top:22px;
+    }
+    .kpi{
+      padding:16px;
+      border-radius:16px;
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--line);
+    }
+    .kpi strong{display:block; font-size:1.05rem}
+    .kpi span{color:var(--muted); font-size:.92rem}
+
+    /* Side panel */
+    .side{
+      background:linear-gradient(145deg,var(--panel),var(--panel2));
+      border:1px solid var(--line);
+      border-radius:calc(var(--radius) + 6px);
+      padding:26px;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .side h2{font-size:1.15rem}
+    .info{
+      display:grid; gap:10px;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+    .info a{color:var(--text); text-decoration:none}
+    .info a:hover{text-decoration:underline}
+    .tagrow{
+      display:flex; flex-wrap:wrap; gap:8px; margin-top:6px
+    }
+    .tag{
+      font-size:.85rem;
+      color:var(--muted);
+      padding:8px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(255,255,255,.03);
+    }
+
+    /* Sections */
+    section{padding:70px 0}
+    .section-title{
+      text-align:center;
+      margin-bottom:34px;
+    }
+    .section-title h2{
+      font-size:2rem;
+      margin-bottom:10px;
+    }
+    .section-title p{color:var(--muted); max-width:70ch; margin:0 auto}
+
+    /* Cards */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:18px;
+    }
+    .card{
+      background:linear-gradient(145deg,var(--panel),var(--panel2));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:26px;
+      transition:.2s ease;
+    }
+    .card:hover{transform:translateY(-2px)}
+    .card h3{color:var(--gold); font-size:1.15rem; margin-bottom:10px}
+    .card p{color:var(--muted)}
+    .card ul{margin-top:10px; padding-left:18px; color:var(--muted)}
+    .card li{margin:6px 0}
+
+    /* Badges awards */
+    .awards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+      margin-top:22px;
+    }
+    .award{
+      border-radius:var(--radius);
+      padding:22px;
+      border:1px solid var(--line);
+      background:radial-gradient(500px 200px at 20% 0%, rgba(201,161,74,.16), transparent 55%),
+                 linear-gradient(145deg,#151a20,#0f1216);
+    }
+    .award strong{display:block; font-size:1.05rem}
+    .award span{color:var(--muted); display:block; margin-top:6px}
+
+    /* Pricing */
+    .pricing{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .pricebox{
+      background:linear-gradient(145deg,var(--panel),var(--panel2));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:26px;
+    }
+    .price{
+      font-size:2.1rem;
+      font-weight:800;
+      color:var(--gold2);
+      margin:8px 0 6px;
+    }
+    .muted{color:var(--muted)}
+
+    /* Map */
+    .mapwrap{
+      overflow:hidden;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      background:rgba(255,255,255,.02);
+    }
+    .mapwrap iframe{
+      width:100%;
+      height:360px;
+      border:0;
+      display:block;
+    }
+
+    /* Footer */
+    footer{
+      border-top:1px solid var(--line);
+      padding:40px 0 60px;
+      color:var(--muted);
+      text-align:center;
+      background:rgba(0,0,0,.2);
+    }
+    footer strong{color:var(--text)}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr}
+      header.hero{padding:60px 0 20px}
+      .hero-card{padding:34px}
+      .pricing{grid-template-columns:1fr}
+    }
+    @media (max-width: 600px){
+      .hero h1{font-size:2.05rem}
+      .kpis{grid-template-columns:1fr}
+      .nav{display:none}
+    }
+  </style>
+
+  <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Plumber",
     "name":"E.I. David Benoit",
-    "legalName":"EI DAVID BENOIT",
-    "telephone":"+33 7 81 43 61 36",
+    "url":"https://david-plomberie62.fr/",
+    "telephone":"+33781436136",
     "email":"eidavidbenoit@gmail.com",
-    "url":"https://eloisebehra-lab.github.io/eidavidbenoit-site/",
+    "areaServed":[
+      "Vendin-le-Vieil",
+      "Pas-de-Calais",
+      "Nord",
+      "Somme",
+      "Hauts-de-France"
+    ],
+    "priceRange":"30€ TTC/h ou sur devis",
     "address":{
       "@type":"PostalAddress",
       "streetAddress":"101 Rue Gustave Delory",
       "postalCode":"62880",
       "addressLocality":"Vendin-le-Vieil",
-      "addressRegion":"Hauts-de-France",
       "addressCountry":"FR"
-    },
-    "areaServed":[
-      {"@type":"AdministrativeArea","name":"Vendin-le-Vieil"},
-      {"@type":"AdministrativeArea","name":"Pas-de-Calais (62)"},
-      {"@type":"AdministrativeArea","name":"Nord (59)"},
-      {"@type":"AdministrativeArea","name":"Somme (80)"},
-      {"@type":"AdministrativeArea","name":"Hauts-de-France"}
-    ],
-    "paymentAccepted":"Carte bancaire, chèque, espèces, virement bancaire",
-    "priceRange":"€€",
-    "identifier":[
-      {"@type":"PropertyValue","name":"SIREN","value":"993008812"},
-      {"@type":"PropertyValue","name":"SIRET","value":"99300881200014"}
-    ],
-    "makesOffer":[
-      {"@type":"Offer","name":"Tarif horaire","price":"30","priceCurrency":"EUR","description":"30€ TTC/heure ou selon devis en fonction des travaux demandés."},
-      {"@type":"Offer","name":"Devis","price":"0","priceCurrency":"EUR","description":"Devis gratuit."}
-    ]
+    }
   }
   </script>
-
-  <style>
-    :root{
-      /* Palette premium (sans bleu/rouge) */
-      --bg0:#0B0F14;      /* obsidienne */
-      --bg1:#0F1620;      /* graphite */
-      --card:rgba(255,255,255,.06);
-      --card2:rgba(255,255,255,.08);
-      --line:rgba(255,255,255,.10);
-
-      --text:#F2F4F7;
-      --muted:rgba(242,244,247,.70);
-      --muted2:rgba(242,244,247,.55);
-
-      --champagne:#C8A86B; /* accent luxe */
-      --champagne2:#E2D2AE;
-      --sage:#7E8F7C;      /* accent secondaire doux */
-      --ink:#0B0F14;
-
-      --shadow: 0 28px 90px rgba(0,0,0,.60);
-      --shadow2: 0 14px 36px rgba(0,0,0,.40);
-
-      --r28:28px;
-      --r22:22px;
-      --r18:18px;
-      --max:1200px;
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color:var(--text);
-      background:
-        radial-gradient(900px 600px at 15% -10%, rgba(200,168,107,.22), transparent 58%),
-        radial-gradient(900px 700px at 95% 10%, rgba(126,143,124,.18), transparent 60%),
-        radial-gradient(900px 800px at 55% 120%, rgba(200,168,107,.12), transparent 60%),
-        linear-gradient(180deg, var(--bg0), var(--bg1) 50%, var(--bg0));
-      overflow-x:hidden;
-    }
-    a{color:inherit; text-decoration:none}
-    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
-    .sr{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
-
-    /* Grain subtil (premium) */
-    body:before{
-      content:"";
-      position:fixed; inset:0; pointer-events:none;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
-      mix-blend-mode:overlay;
-      opacity:.16;
-    }
-
-    /* Topbar */
-    .topbar{
-      position:sticky; top:0; z-index:80;
-      background:rgba(11,15,20,.62);
-      backdrop-filter: blur(18px);
-      border-bottom:1px solid rgba(255,255,255,.08);
-    }
-    .top{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:12px 0;
-    }
-    .brand{display:flex; align-items:center; gap:12px; min-width:260px}
-    .mark{
-      width:44px; height:44px; border-radius:16px;
-      border:1px solid rgba(255,255,255,.12);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      box-shadow: var(--shadow2);
-      display:grid; place-items:center;
-      position:relative; overflow:hidden;
-    }
-    .mark:after{
-      content:"";
-      position:absolute; inset:-70%;
-      background: radial-gradient(circle at 30% 30%, rgba(200,168,107,.22), transparent 60%),
-                  radial-gradient(circle at 70% 60%, rgba(126,143,124,.18), transparent 60%);
-      transform: rotate(14deg);
-      filter: blur(2px);
-    }
-    .mark svg{position:relative; z-index:1}
-    .btxt{display:flex; flex-direction:column; line-height:1.05}
-    .btxt strong{font-size:13px; letter-spacing:.14em}
-    .btxt span{font-size:12px; color:var(--muted2)}
-
-    nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:flex-end}
-    nav a{
-      font-size:14px; color:rgba(242,244,247,.86);
-      padding:8px 10px; border-radius:999px;
-      border:1px solid transparent;
-      transition: background .15s ease, border-color .15s ease;
-    }
-    nav a:hover{border-color:rgba(255,255,255,.12); background:rgba(255,255,255,.06)}
-    .mini-cta{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 12px; border-radius:999px;
-      background: linear-gradient(90deg, rgba(200,168,107,.95), rgba(226,210,174,.92));
-      color: #12161C;
-      border:1px solid rgba(255,255,255,.12);
-      box-shadow: var(--shadow2);
-      font-weight:900; font-size:14px;
-      white-space:nowrap;
-    }
-    .mini-cta:hover{filter:brightness(1.02)}
-    @media (max-width: 980px){ nav{display:none} .brand{min-width:auto} }
-
-    /* Hero */
-    header.hero{padding:60px 0 18px}
-    .hero-grid{display:grid; grid-template-columns: 1.12fr .88fr; gap:16px; align-items:stretch}
-    @media (max-width:980px){ .hero-grid{grid-template-columns:1fr} }
-
-    .pill{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 14px; border-radius:999px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      backdrop-filter: blur(10px);
-      box-shadow: var(--shadow2);
-      font-size:14px; color:rgba(242,244,247,.90);
-      width:fit-content;
-    }
-    .dot{
-      width:10px; height:10px; border-radius:999px;
-      background: linear-gradient(135deg, rgba(200,168,107,1), rgba(126,143,124,1));
-    }
-
-    h1{
-      margin:14px 0 10px;
-      font-size: clamp(34px, 4.4vw, 60px);
-      line-height:1.02;
-      letter-spacing:-.035em;
-    }
-    .sub{
-      margin:0 0 16px;
-      color:var(--muted);
-      font-size:16px;
-      line-height:1.75;
-      max-width:68ch;
-    }
-
-    .hero-actions{display:flex; gap:12px; flex-wrap:wrap; margin-top:10px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding:12px 14px;
-      border-radius:18px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.05);
-      color:var(--text);
-      box-shadow: var(--shadow2);
-      font-weight:900;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-    }
-    .btn:hover{transform: translateY(-1px); border-color:rgba(255,255,255,.16)}
-    .btn.primary{
-      color:#12161C;
-      background: linear-gradient(90deg, rgba(200,168,107,.95), rgba(226,210,174,.92));
-      border-color: rgba(255,255,255,.12);
-    }
-    .btn.ghost{background:rgba(255,255,255,.04)}
-    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px}
-    .chip{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 10px;
-      border-radius:999px;
-      background:rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      font-size:13px;
-      color:rgba(242,244,247,.88);
-    }
-
-    .hero-card{
-      border-radius: var(--r28);
-      padding:18px;
-      border:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-      position:relative;
-      isolation:isolate;
-    }
-    .hero-card:before{
-      content:"";
-      position:absolute; inset:-60%;
-      background:
-        radial-gradient(circle at 35% 40%, rgba(200,168,107,.28), transparent 56%),
-        radial-gradient(circle at 70% 60%, rgba(126,143,124,.22), transparent 62%);
-      transform: rotate(12deg);
-      filter: blur(2px);
-      z-index:-1;
-    }
-    .kpis{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px}
-    .kpi{
-      padding:14px;
-      border-radius: 20px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-    }
-    .kpi strong{display:block; font-size:14px}
-    .kpi span{display:block; color:var(--muted); font-size:13px; margin-top:6px; line-height:1.35}
-
-    /* Sections */
-    .section{padding:60px 0}
-    .section h2{
-      margin:0 0 12px;
-      font-size: clamp(24px, 2.4vw, 36px);
-      letter-spacing:-.02em;
-    }
-    .lead{margin:0 0 18px; color:var(--muted); line-height:1.8; max-width:92ch}
-
-    /* Premium cards */
-    .grid3{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
-    @media (max-width:980px){ .grid3{grid-template-columns:1fr} }
-
-    .card{
-      border-radius: var(--r28);
-      padding:18px;
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      box-shadow: var(--shadow2);
-      position:relative;
-      overflow:hidden;
-    }
-    .card:before{
-      content:"";
-      position:absolute; inset:-80%;
-      background:
-        radial-gradient(circle at 30% 30%, rgba(200,168,107,.16), transparent 60%),
-        radial-gradient(circle at 65% 55%, rgba(126,143,124,.14), transparent 60%);
-      transform: rotate(10deg);
-      opacity:.9;
-    }
-    .card > *{position:relative; z-index:1}
-    .card h3{margin:0 0 8px; font-size:18px}
-    .card p{margin:0; color:var(--muted); line-height:1.75}
-    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
-    .tag{
-      font-size:12px;
-      color:rgba(242,244,247,.86);
-      padding:7px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-    }
-
-    /* Split blocks */
-    .split{display:grid; gap:14px; grid-template-columns: 1fr 1fr}
-    @media (max-width:980px){ .split{grid-template-columns:1fr} }
-    .list{margin:10px 0 0; padding:0; list-style:none; display:grid; gap:10px}
-    .list li{display:flex; gap:10px; align-items:flex-start; color:var(--muted); line-height:1.65}
-    .tick{
-      width:18px; height:18px; border-radius:7px;
-      background: linear-gradient(135deg, rgba(200,168,107,.95), rgba(126,143,124,.85));
-      flex:0 0 18px;
-      margin-top:2px;
-      box-shadow: var(--shadow2);
-    }
-
-    /* Awards */
-    .awards{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr); margin-top:14px}
-    @media (max-width:980px){ .awards{grid-template-columns:1fr} }
-    .award{
-      border-radius: var(--r28);
-      padding:18px;
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      box-shadow: var(--shadow2);
-    }
-    .award .year{
-      display:inline-flex;
-      padding:6px 10px;
-      border-radius:999px;
-      font-weight:950;
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      font-size:12px;
-      letter-spacing:.08em;
-      color:rgba(242,244,247,.92);
-    }
-    .award h3{margin:10px 0 6px; font-size:18px}
-    .award p{margin:0; color:var(--muted); line-height:1.75}
-    .award.gold{
-      background: linear-gradient(180deg, rgba(200,168,107,.16), rgba(255,255,255,.04));
-      border-color: rgba(200,168,107,.25);
-    }
-
-    /* FAQ */
-    details{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      border-radius: 20px;
-      padding: 12px 14px;
-      box-shadow: var(--shadow2);
-    }
-    details + details{margin-top:10px}
-    summary{
-      cursor:pointer;
-      font-weight:950;
-      color:rgba(242,244,247,.92);
-      list-style:none;
-      display:flex; justify-content:space-between; gap:10px; align-items:center;
-    }
-    summary::-webkit-details-marker{display:none}
-    details p{margin:10px 0 0; color:var(--muted); line-height:1.75}
-
-    /* Contact + Map */
-    .contact-grid{display:grid; gap:14px; grid-template-columns: .9fr 1.1fr}
-    @media (max-width:980px){ .contact-grid{grid-template-columns:1fr} }
-    .contact{
-      border-radius: var(--r28);
-      padding:18px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      box-shadow: var(--shadow2);
-    }
-    .contact h3{margin:0 0 10px}
-    .row{
-      display:flex; gap:10px; align-items:center;
-      padding:10px 12px;
-      border-radius:20px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      margin-top:10px;
-    }
-    .ico{
-      width:42px; height:42px; border-radius:18px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      display:grid; place-items:center;
-      flex:0 0 42px;
-    }
-    .row small{display:block; color:var(--muted2)}
-    .row strong{display:block; font-size:15px}
-
-    .map{
-      border-radius: var(--r28);
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.10);
-      box-shadow: var(--shadow);
-      min-height: 380px;
-      background: rgba(255,255,255,.04);
-    }
-    .map iframe{width:100%; height:100%; border:0; filter:saturate(.9) contrast(1.05)}
-
-    /* Footer */
-    footer{
-      padding: 28px 0 44px;
-      border-top:1px solid rgba(255,255,255,.08);
-      color:rgba(242,244,247,.62);
-      font-size:13px;
-    }
-    .foot{display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:space-between}
-    .links{display:flex; gap:12px; flex-wrap:wrap}
-    .links a{color:rgba(242,244,247,.62)}
-    .links a:hover{color:#fff}
-
-    /* Floating buttons */
-    .float{
-      position:fixed; z-index:90;
-      right:16px; bottom:16px;
-      display:flex; flex-direction:column; gap:10px;
-    }
-    .fab{
-      width:56px; height:56px;
-      border-radius:22px;
-      display:grid; place-items:center;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(16px);
-      transition: transform .15s ease, filter .15s ease;
-      font-size:18px;
-    }
-    .fab:hover{transform: translateY(-1px)}
-    .fab.primary{
-      color:#12161C;
-      background: linear-gradient(90deg, rgba(200,168,107,.95), rgba(226,210,174,.92));
-    }
-
-    /* Reveal animation */
-    .reveal{opacity:0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease}
-    .reveal.on{opacity:1; transform:none}
-  </style>
 </head>
 
 <body>
-  <!-- TOPBAR -->
-  <div class="topbar">
-    <div class="container">
-      <div class="top">
-        <div class="brand" aria-label="E.I. David Benoit">
-          <div class="mark" aria-hidden="true">
-            <!-- Icône premium minimal (plomberie + chauffage + clim) -->
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-              <path d="M6 8h6a2 2 0 0 0 2-2V4" stroke="rgba(242,244,247,.9)" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M14 4h3a2 2 0 0 1 2 2v2" stroke="rgba(242,244,247,.9)" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M8 8v6a2 2 0 0 0 2 2h2" stroke="rgba(242,244,247,.9)" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M18 10c0 2-1.2 3.5-2.5 4.6-1.3-1.1-2.5-2.6-2.5-4.6 0-1.3 1.1-2.5 2.5-3.8 1.4 1.3 2.5 2.5 2.5 3.8Z" stroke="rgba(200,168,107,.95)" stroke-width="1.6" stroke-linejoin="round"/>
-              <path d="M6 18l2-2m0 4v-6m-2 2l2 2" stroke="rgba(126,143,124,.95)" stroke-width="1.4" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="btxt">
-            <strong>E.I. DAVID BENOIT</strong>
-            <span>Plomberie • Chauffage • Climatisation</span>
-          </div>
-        </div>
 
-        <nav aria-label="Navigation">
-          <a href="#services">Services</a>
-          <a href="#zones">Zone</a>
-          <a href="#distinctions">Distinctions</a>
-          <a href="#tarifs">Tarifs</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-          <a class="mini-cta" href="tel:+33781436136">📞 07 81 43 61 36</a>
-        </nav>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="brand">
+      <strong>E.I. David Benoit</strong>
+      <span>Plomberie • Chauffage • Climatisation – Vendin-le-Vieil</span>
+    </div>
+
+    <nav class="nav" aria-label="Navigation">
+      <a href="#prestations">Prestations</a>
+      <a href="#recompenses">Récompenses</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#zone">Zone</a>
+      <a href="#contact" class="pill">Devis gratuit</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-card">
+      <h1>David <span>Plomberie 62</span></h1>
+      <p>
+        Artisan plombier chauffagiste climatisation à <strong>Vendin-le-Vieil</strong>.
+        Intervention rapide et soignée dans le <strong>62</strong>, le <strong>59</strong> et le <strong>80</strong> (Hauts-de-France).
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+33781436136">📞 Appeler maintenant</a>
+        <a class="btn" href="mailto:eidavidbenoit@gmail.com">✉️ Envoyer un email</a>
+        <a class="btn" href="#contact">📍 Voir la zone & contact</a>
+      </div>
+
+      <div class="kpis" aria-label="Atouts">
+        <div class="kpi">
+          <strong>Devis gratuit</strong>
+          <span>Réponse rapide, selon vos besoins</span>
+        </div>
+        <div class="kpi">
+          <strong>30€ TTC / heure</strong>
+          <span>ou sur devis selon travaux</span>
+        </div>
+        <div class="kpi">
+          <strong>Paiements acceptés</strong>
+          <span>CB • Chèque • Espèces • Virement</span>
+        </div>
+        <div class="kpi">
+          <strong>Travail soigné</strong>
+          <span>Qualité & sérieux</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="side" id="contact">
+      <h2>Coordonnées</h2>
+      <div class="info">
+        <div>📞 <a href="tel:+33781436136">07 81 43 61 36</a></div>
+        <div>✉️ <a href="mailto:eidavidbenoit@gmail.com">eidavidbenoit@gmail.com</a></div>
+        <div>📍 101 Rue Gustave Delory, 62880 Vendin-le-Vieil</div>
+      </div>
+
+      <div class="tagrow" aria-label="Mots-clés">
+        <span class="tag">Dépannage</span>
+        <span class="tag">Rénovation</span>
+        <span class="tag">Installation</span>
+        <span class="tag">Entretien</span>
+        <span class="tag">Urgence</span>
+      </div>
+
+      <div style="margin-top:8px; color:var(--muted); font-size:.95rem">
+        <strong style="color:var(--text)">Disponibilités :</strong> selon planning – intervention rapide.
+      </div>
+    </aside>
+
+  </div>
+</header>
+
+<section id="prestations">
+  <div class="container">
+    <div class="section-title">
+      <h2>Prestations</h2>
+      <p>Des interventions propres, efficaces, et durables – adaptées à votre logement ou local.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Plomberie</h3>
+        <p>Fuites, robinetterie, sanitaires, dépannage, rénovation complète.</p>
+        <ul>
+          <li>Recherche & réparation de fuite</li>
+          <li>Installation WC / douche / baignoire</li>
+          <li>Rénovation salle de bain</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Chauffage</h3>
+        <p>Optimisation, entretien, remplacement et installations.</p>
+        <ul>
+          <li>Radiateurs & réseaux</li>
+          <li>Entretien & diagnostic</li>
+          <li>Remplacement / modernisation</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Climatisation</h3>
+        <p>Confort été/hiver, solutions performantes et économiques.</p>
+        <ul>
+          <li>Installation</li>
+          <li>Maintenance</li>
+          <li>Conseils & optimisation</li>
+        </ul>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- HERO -->
-  <header class="hero" id="accueil">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="reveal">
-          <div class="pill"><span class="dot"></span> Devis gratuit • Travail soigné • Hauts-de-France</div>
-          <h1>Une finition propre.<br>Un service haut niveau.</h1>
-          <p class="sub">
-            <strong>E.I. David Benoit</strong> intervient en <strong>plomberie</strong>, <strong>chauffage</strong> et <strong>climatisation</strong>
-            à <strong>Vendin-le-Vieil</strong> et alentours. Déplacements possibles sur le <strong>62</strong>, <strong>59</strong> et <strong>80</strong>
-            (Hauts-de-France). Conseils clairs, méthode rigoureuse, résultat durable.
-          </p>
+<section id="recompenses">
+  <div class="container">
+    <div class="section-title">
+      <h2>Un artisan reconnu</h2>
+      <p>Des distinctions qui reflètent un niveau d’exigence élevé et un vrai savoir-faire terrain.</p>
+    </div>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="tel:+33781436136">📞 Appeler</a>
-            <a class="btn ghost" href="mailto:eidavidbenoit@gmail.com?subject=Demande%20de%20devis%20-%20E.I.%20David%20Benoit">✉️ Demander un devis</a>
-            <a class="btn" href="#contact">📍 Adresse & carte</a>
-          </div>
-
-          <div class="chips" aria-label="Engagements">
-            <span class="chip">✅ Devis gratuit</span>
-            <span class="chip">✅ 30€ TTC/h (ou sur devis)</span>
-            <span class="chip">✅ CB • chèque • espèces • virement</span>
-          </div>
-        </div>
-
-        <aside class="hero-card reveal" aria-label="Résumé">
-          <div class="pill"><span class="dot"></span> Excellence métier • Sérieux prouvé</div>
-          <div class="kpis">
-            <div class="kpi"><strong>Tarif</strong><span>30€ TTC / heure<br>ou selon devis</span></div>
-            <div class="kpi"><strong>Devis</strong><span>Gratuit & rapide<br>sans engagement</span></div>
-            <div class="kpi"><strong>Zone</strong><span>Vendin-le-Vieil<br>62 • 59 • 80</span></div>
-            <div class="kpi"><strong>Paiement</strong><span>CB • chèque<br>espèces • virement</span></div>
-          </div>
-          <div class="chips">
-            <span class="chip">🚰 Plomberie</span>
-            <span class="chip">🔥 Chauffage</span>
-            <span class="chip">❄️ Climatisation</span>
-          </div>
-        </aside>
+    <div class="awards">
+      <div class="award">
+        <strong>🥈 Médaille d’argent WorldSkills</strong>
+        <span>2021 – Participation & performance en compétition</span>
+      </div>
+      <div class="award">
+        <strong>🥈 Meilleurs Apprentis de France</strong>
+        <span>2023 – Médaille d’argent</span>
+      </div>
+      <div class="award">
+        <strong>🥇 Médaille d’or WorldSkills</strong>
+        <span>2025 – Excellence & sérieux</span>
       </div>
     </div>
-  </header>
-
-  <!-- SERVICES -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="reveal">
-        <h2>Services</h2>
-        <p class="lead">
-          Une approche premium : diagnostic sérieux, solution adaptée, pose propre et finitions nettes.
-          Un interlocuteur unique, du devis à la réalisation.
-        </p>
-      </div>
-
-      <div class="grid3">
-        <article class="card reveal">
-          <h3>🚰 Plomberie</h3>
-          <p>Dépannage, recherche de fuite, robinetterie, sanitaires, raccordements, rénovation et optimisation du confort.</p>
-          <div class="tags">
-            <span class="tag">Fuite</span><span class="tag">Sanitaires</span><span class="tag">Rénovation</span>
-          </div>
-        </article>
-
-        <article class="card reveal">
-          <h3>🔥 Chauffage</h3>
-          <p>Installation/remplacement, entretien, radiateurs, circuits, conseils d’amélioration et confort thermique.</p>
-          <div class="tags">
-            <span class="tag">Installation</span><span class="tag">Entretien</span><span class="tag">Confort</span>
-          </div>
-        </article>
-
-        <article class="card reveal">
-          <h3>❄️ Climatisation</h3>
-          <p>Étude, installation et entretien. Solutions adaptées à votre logement ou local (selon vos besoins).</p>
-          <div class="tags">
-            <span class="tag">Étude</span><span class="tag">Pose</span><span class="tag">Maintenance</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ZONES -->
-  <section class="section" id="zones">
-    <div class="container">
-      <div class="reveal">
-        <h2>Zone d’intervention</h2>
-        <p class="lead">
-          Basé à <strong>Vendin-le-Vieil (62880)</strong> : interventions sur le secteur et alentours.
-          Déplacements possibles sur les départements <strong>62</strong>, <strong>59</strong> et <strong>80</strong> (Hauts-de-France).
-        </p>
-      </div>
-
-      <div class="split">
-        <div class="card reveal">
-          <h3>📍 Secteur principal</h3>
-          <ul class="list">
-            <li><span class="tick"></span> Vendin-le-Vieil et communes voisines</li>
-            <li><span class="tick"></span> Lens • Liévin • Hénin-Beaumont • Béthune • Arras (selon demande)</li>
-            <li><span class="tick"></span> Déplacements possibles selon nature des travaux</li>
-          </ul>
-        </div>
-
-        <div class="card reveal">
-          <h3>🧭 Départements</h3>
-          <ul class="list">
-            <li><span class="tick"></span> <strong>62 — Pas-de-Calais</strong> (prioritaire)</li>
-            <li><span class="tick"></span> <strong>59 — Nord</strong> (selon intervention)</li>
-            <li><span class="tick"></span> <strong>80 — Somme</strong> (selon intervention)</li>
-            <li><span class="tick"></span> <strong>Hauts-de-France</strong> — possible sur devis</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DISTINCTIONS -->
-  <section class="section" id="distinctions">
-    <div class="container">
-      <div class="reveal">
-        <h2>Distinctions & sérieux professionnel</h2>
-        <p class="lead">
-          Un parcours reconnu : rigueur, précision et exigence — appliquées sur chaque intervention, chez vous.
-        </p>
-      </div>
-
-      <div class="awards">
-        <div class="award reveal">
-          <span class="year">2021</span>
-          <h3>Médaille d’argent — WorldSkills</h3>
-          <p>Excellence technique, respect des normes, qualité du rendu et précision.</p>
-        </div>
-
-        <div class="award reveal">
-          <span class="year">2023</span>
-          <h3>Médaille d’argent — Meilleur Apprenti de France</h3>
-          <p>Distinction nationale : méthode, propreté du travail, maîtrise professionnelle.</p>
-        </div>
-
-        <div class="award gold reveal">
-          <span class="year">2025</span>
-          <h3>🥇 Médaille d’or — WorldSkills</h3>
-          <p>Exigence maximale : savoir-faire, rapidité, précision et finition premium.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TARIFS -->
-  <section class="section" id="tarifs">
-    <div class="container">
-      <div class="reveal">
-        <h2>Tarifs & paiement</h2>
-        <p class="lead">
-          Transparence avant tout : le tarif peut varier selon la nature des travaux (installation, rénovation, contraintes techniques).
-        </p>
-      </div>
-
-      <div class="split">
-        <div class="card reveal">
-          <h3>💶 Tarification</h3>
-          <ul class="list">
-            <li><span class="tick"></span> <strong>Taux horaire : 30€ TTC</strong></li>
-            <li><span class="tick"></span> <strong>Ou selon devis</strong> en fonction des travaux demandés</li>
-            <li><span class="tick"></span> <strong>Devis gratuit</strong> (réponse rapide)</li>
-          </ul>
-        </div>
-
-        <div class="card reveal">
-          <h3>💳 Paiements acceptés</h3>
-          <ul class="list">
-            <li><span class="tick"></span> Carte bancaire</li>
-            <li><span class="tick"></span> Chèque</li>
-            <li><span class="tick"></span> Espèces</li>
-            <li><span class="tick"></span> Virement bancaire</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="reveal">
-        <h2>Questions fréquentes</h2>
-        <p class="lead">Quelques réponses rapides pour vous aider à décider sereinement.</p>
-      </div>
-
-      <div class="reveal">
-        <details>
-          <summary>Le devis est-il vraiment gratuit ? <span>＋</span></summary>
-          <p>Oui. Le devis est gratuit et sans engagement. Selon la demande, il peut être fait rapidement par téléphone ou après échange sur place.</p>
-        </details>
-
-        <details>
-          <summary>Intervenez-vous en dehors de Vendin-le-Vieil ? <span>＋</span></summary>
-          <p>Oui : Vendin-le-Vieil et alentours + interventions possibles sur les départements 62, 59 et 80 (Hauts-de-France).</p>
-        </details>
-
-        <details>
-          <summary>Quels moyens de paiement acceptez-vous ? <span>＋</span></summary>
-          <p>Carte bancaire, chèque, espèces et virement bancaire.</p>
-        </details>
-
-        <details>
-          <summary>Proposez-vous un tarif horaire ? <span>＋</span></summary>
-          <p>Oui : 30€ TTC/heure. Selon les travaux demandés, un devis peut être proposé.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="reveal">
-        <h2>Contact & coordonnées</h2>
-        <p class="lead">
-          Pour un dépannage, une installation ou un conseil : appelez ou envoyez un email — <strong>devis gratuit</strong>.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact reveal">
-          <h3>Contact direct</h3>
-
-          <a class="row" href="tel:+33781436136" aria-label="Appeler">
-            <div class="ico" aria-hidden="true">📞</div>
-            <div><small>Téléphone</small><strong>07 81 43 61 36</strong></div>
-          </a>
-
-          <a class="row" href="mailto:eidavidbenoit@gmail.com?subject=Demande%20de%20devis%20-%20E.I.%20David%20Benoit" aria-label="Email">
-            <div class="ico" aria-hidden="true">✉️</div>
-            <div><small>Email</small><strong>eidavidbenoit@gmail.com</strong></div>
-          </a>
-
-          <div class="row">
-            <div class="ico" aria-hidden="true">📍</div>
-            <div><small>Adresse</small><strong>101 Rue Gustave Delory, 62880 Vendin-le-Vieil</strong></div>
-          </div>
-
-          <div class="row">
-            <div class="ico" aria-hidden="true">🧾</div>
-            <div><small>Informations</small><strong>SIREN : 993 008 812 • SIRET : 993 008 812 00014</strong></div>
-          </div>
-
-          <div class="hero-actions" style="margin-top:14px">
-            <a class="btn primary" href="tel:+33781436136">📞 Appeler maintenant</a>
-            <a class="btn ghost" href="mailto:eidavidbenoit@gmail.com?subject=Demande%20de%20devis%20-%20E.I.%20David%20Benoit&body=Bonjour%2C%0A%0AJe%20souhaite%20un%20devis%20pour%20%3A%0A-%20Type%20de%20travaux%20%3A%0A-%20Adresse%20%3A%0A-%20Disponibilit%C3%A9s%20%3A%0A%0AMerci%2C">✉️ Devis gratuit</a>
-          </div>
-        </div>
-
-        <div class="map reveal" aria-label="Carte">
-          <iframe
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=101%20Rue%20Gustave%20Delory%2062880%20Vendin-le-Vieil&output=embed"
-            title="Carte - 101 Rue Gustave Delory, Vendin-le-Vieil">
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="foot">
-        <div>
-          <strong>E.I. DAVID BENOIT</strong> — Plomberie • Chauffage • Climatisation<br>
-          Vendin-le-Vieil (62) • Intervention 59 / 80 • Hauts-de-France
-        </div>
-        <div class="links" aria-label="Liens">
-          <a href="#services">Services</a>
-          <a href="#zones">Zone</a>
-          <a href="#distinctions">Distinctions</a>
-          <a href="#tarifs">Tarifs</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-      <div style="margin-top:12px; color:rgba(242,244,247,.48)">
-        © <span id="y"></span> E.I. David Benoit. Tous droits réservés.
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating buttons -->
-  <div class="float" aria-label="Raccourcis">
-    <a class="fab primary" href="tel:+33781436136" aria-label="Appeler">📞</a>
-    <a class="fab" href="mailto:eidavidbenoit@gmail.com?subject=Demande%20de%20devis%20-%20E.I.%20David%20Benoit" aria-label="Email">✉️</a>
-    <a class="fab" href="#contact" aria-label="Carte">📍</a>
   </div>
+</section>
 
-  <script>
-    // Année auto
-    document.getElementById("y").textContent = new Date().getFullYear();
+<section id="tarifs">
+  <div class="container">
+    <div class="section-title">
+      <h2>Tarifs & Paiements</h2>
+      <p>Transparence et simplicité : vous savez à quoi vous attendre.</p>
+    </div>
 
-    // Reveal on scroll (effet premium)
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting) e.target.classList.add('on');
-      });
-    }, {threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  </script>
+    <div class="pricing">
+      <div class="pricebox">
+        <h3 style="color:var(--gold)">Main d’œuvre</h3>
+        <div class="price">30€ TTC / h</div>
+        <p class="muted">Ou <strong style="color:var(--text)">sur devis</strong> selon la nature des travaux demandés.</p>
+      </div>
+
+      <div class="pricebox">
+        <h3 style="color:var(--gold)">Devis & paiements</h3>
+        <p class="muted"><strong style="color:var(--text)">Devis gratuit</strong> – intervention selon planning.</p>
+        <p class="muted" style="margin-top:10px">
+          Paiements acceptés : <strong style="color:var(--text)">Carte bancaire</strong>, <strong style="color:var(--text)">chèque</strong>, <strong style="color:var(--text)">espèces</strong>, <strong style="color:var(--text)">virement</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="zone">
+  <div class="container">
+    <div class="section-title">
+      <h2>Zone d’intervention</h2>
+      <p>Vendin-le-Vieil et alentours, et déplacements possibles dans les Hauts-de-France (62 • 59 • 80).</p>
+    </div>
+
+    <div class="mapwrap" aria-label="Carte">
+      <!-- Map: Vendin-le-Vieil (sans clé API, simple embed) -->
+      <iframe
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=101%20Rue%20Gustave%20Delory%2062880%20Vendin-le-Vieil&output=embed">
+      </iframe>
+    </div>
+
+    <p style="margin-top:16px; text-align:center; color:var(--muted)">
+      📍 Adresse : <strong style="color:var(--text)">101 Rue Gustave Delory, 62880 Vendin-le-Vieil</strong>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>
+      <strong>E.I. David Benoit</strong> — Plomberie • Chauffage • Climatisation<br>
+      Vendin-le-Vieil • Hauts-de-France • 62 / 59 / 80<br><br>
+      📞 <a href="tel:+33781436136">07 81 43 61 36</a> • ✉️ <a href="mailto:eidavidbenoit@gmail.com">eidavidbenoit@gmail.com</a><br><br>
+      © 2026 — Tous droits réservés
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>
